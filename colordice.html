@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="./images/favicon.ico"
+
+
+<!-- ======== GOOGLE FONTS ========== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400&family=Licorice&family=Maven+Pro&family=Pacifico&family=Righteous&family=Roboto+Mono:wght@300&display=swap"
+    rel="stylesheet">
+
+
+
+
+<!-- ============ end ============ -->
+<script src="https://js.cx/libs/animate.js"></script>
+
+</head>
+<body>
+    <section class="header">   
+     
+            <p id="title" class="title"> ColorDice &#9927;</p>
+
+       
+
+   
+
+    </section>
+    
+
+ <section class="section" id="sectionOne">
+     <p id="total"></p>
+    <h5 id="results">Let's roll the dice</h5>
+
+    <div id="dice-section" >
+        <!-- <h3>Player 1</h3> -->
+       <!-- <span id="player-name"> <p class="p1">name</p>
+    <p class="p2">name</p> </span>  -->
+        <div id="dice-1" class="dice dice-one">
+
+            <div id="comOne" class="ran-num ctg-one-dc1"></div>
+            <div id="comTwo" class="ran-num ctg-two-dc1"></div>
+            <div id="comThree" class="ran-num ctg-three-dc1"></div>
+
+
+            <div id="comFour" class="ran-num ctg-four-dc1"></div>
+            <div id="comFive" class="ran-num ctg-five-dc1"></div>
+            <div id="comSix" class="ran-num ctg-six-dc1"></div>
+
+            <div id="comMid" class="ran-num ctg-mid-dc1"></div>
+        </div>
+     
+        <!-- <h3>player 2</h3> -->
+        <div id="dice-2" class="dice dice-two">
+            <div id="dc1" class="ran-num ctg-one-dc2 "></div>
+            <div id="dc2" class="ran-num ctg-two-dc2"></div>
+            <div id="dc3" class="ran-num ctg-three-dc2"></div>
+            <div id="dc4" class="ran-num ctg-four-dc2"></div>
+            <div id="dc5" class="ran-num ctg-five-dc2"></div>
+            <div id="dc6" class="ran-num ctg-six-dc2 "></div>
+            <div id="dcMid" class="ran-num ctg-mid-dc2 "></div>
+        </div>
+
+    </div>
+
+    <div id="refresh">
+       <button id="btn" onclick="roll()">
+<img class="fight-img" src="./images/fight2.png" alt="">
+       </button>
+    </div>
+
+   </section>
+
+   <div id="col-overlay">
+<div id="myNav" class="overlay">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10006;</a>
+
+    <div class="overlay-content">
+        <p>THEMES &#9788;</p>
+    
+        <div class="bgColor">
+
+            <button class="colorBg1" onclick="changeBodyBg('#FFCCD2')"></button>
+            <button class="colorBg2" onclick="changeBodyBg('#FFC900')"></button>
+            <button class="colorBg3" onclick="changeBodyBg('#EC255A')"></button>
+        
+        </div>
+       <p>LOFI &#9836;</p>
+    <audio  id="au1">
+        <source src="./audio/AncientMarketplace.mp3" type="audio/mp3">
+    </audio>
+<audio id="au2" class="au">
+        <source src="./audio/HueyDazeAmore.mp3" type="audio/mp3">
+    </audio>
+<audio id="au3" class="au">
+        <source src="./audio/KerusuAnAutumnNight.mp3" type="audio/mp3">
+    </audio>
+<audio id="au4" class="au">
+        <source src="./audio/MountHua.mp3" type="audio/mp3">
+    </audio>
+<audio id="au5" class="au">
+        <source id="a6" src="./audio/Murmurs.mp3" type="audio/mp3">
+    </audio>
+<audio id="au6" class="au">
+        <source src="./audio/WanderingInDreams.mp3" type="audio/mp3"></audio>
+
+     
+<div class="container-au">
+    <hr>
+    <button class="audio dio1" onclick="playAudio('au1')" type="button">After Rain</button>
+    <button class="audio dio2" onclick="playAudio('au2')" type="button">Windy</button>
+    <button class="audio dio3" onclick="playAudio('au3')" type="button">Autum Night</button>
+    <button class="audio dio4" onclick="playAudio('au4')" type="button">Cloudy Day</button>
+    <button class="audio dio5" onclick="playAudio('au5')" type="button">Sunshine</button>
+    <button class="audio dio6" onclick="playAudio('au6')" type="button">Dreams</button>
+
+        <hr>
+        <!-- <button id="stopButton" type="button">Pause Audio</button> -->
+        <input id="stopButton" class="audio"type="button" value="Stop Audio" />
+    </div>
+</div>
+
+
+</div>
+<div class="openNav" >
+<div class="nav-open "cursor:pointer" onclick="openNav()">----------------</div>
+</div>
+
+ <footer>
+   <p>MADE WITH &#10083; BY &#415;&#77;</p>
+
+<hr>
+    <a class="footer-link" href="https://twitter.com/omrajdorz"><img class="footer-link" src="./images/twitter-two.png" alt=""></a>
+    <a class="footer-link" href="https://github.com/omrajdorjee"><img class="footer-link" src="./images/github.png" alt=""></a>
+    <a class="footer-link" href="#"> <img class="footer-link" src="./images/insta-one.png" alt=""></a> 
+ </footer>
+
+        <script src="/main.js"></script>
+       
+</body>
+</html>

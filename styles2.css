@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(110deg, #e4ffd9 60%, #ddfeff 60%);
+  max-height: 100%;
+}
+
+#welcome-text {
+  margin: 10% auto 10%;
+  color: rgb(109, 109, 109);
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+  /* text-shadow: #030303 0.5px 1px; */
+}
+#btn {
+  text-align: center;
+}
+.btn {
+  border-radius: 15px;
+  text-align: center;
+  font-family: monospace;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #b983ff;
+  color: #fff;
+  border-style: none;
+}
+.btn:hover {
+  background-color: #b8e4f0;
+  color: white;
+  
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+  #btn {
+    margin: 50% auto 10%;
+  }
+    text-align: center;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+  /* text-shadow: #030303 0.5px 1px; */
+}
+#btn {
+  text-align: center;
+}
+.btn {
+  border-radius: 15px;
+  text-align: center;
+  font-family: monospace;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #b983ff;
+  color: #fff;
+  border-style: none;
+}
+.btn:hover {
+  background-color: #b8e4f0;
+  color: white;
+
+ 
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
