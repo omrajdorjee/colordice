@@ -301,12 +301,12 @@ font-family: 'Righteous', cursive;
     width: 30px;
     height: 30px;
   }
-  .colorBg1 {
+ .colorBg1 {
     display: block;
     border: none;
     background-color: #ffccd2;
     width: 120px;
-    height: 30px;
+    height: 20px;
     border-radius: 10px;
     margin: 8px auto;
   }
@@ -315,7 +315,7 @@ font-family: 'Righteous', cursive;
     border: none;
     background-color: #FFC900;
     width: 120px;
-    height: 30px;
+    height: 20px;
     border-radius: 10px;
     margin: 8px auto;
   }
@@ -324,9 +324,30 @@ font-family: 'Righteous', cursive;
     border: none;
     background-color: #EC255A;
     width: 120px;
-    height: 30px;
+    height: 20px;
     border-radius: 10px;
     margin: 8px auto;
+  }
+  .colorBg4 {
+    display: block;
+    border: none;
+    background-color: #79018C;
+    width: 120px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 8px auto;
+  }
+  .colorBg5 {
+    display: block;
+    border: none;
+    background-color: #519259;
+    width: 120px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 8px auto;
+  }
+  P{
+    margin-top:0;
   }
   .bgColor {
     position: relative;
@@ -344,7 +365,7 @@ font-family: 'Righteous', cursive;
   text-align: center;
   padding:7px 10px;
   border: none;
-  margin: 10px;
+  margin: 5px;
   /* display: block;   */
 }
 .audio:hover {
@@ -568,7 +589,7 @@ font-family: 'Righteous', cursive;
   text-align: center;
 }
 .overlay {
-  max-height: 530px;
+  max-height: 540px;
   height: 0%;
   width: 95.5%;
 
