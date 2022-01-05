@@ -57,11 +57,11 @@ function roll(){
         });
      
     },
-    1000
+    1500
     );
 
-
-   
+  var audio = document.getElementById("rollingaudio");
+        audio.play();
 
 
   var randomNumDone = Math.random();
@@ -72,7 +72,7 @@ function roll(){
 
     setTimeout(function() {
 document.querySelector("#total").innerHTML = "blue " + ( (randomNum)+ " \u26AF" + " red " + (randomNumD2) );
-    }, 1000);
+    }, 1500);
 
   
    
@@ -80,20 +80,20 @@ document.querySelector("#total").innerHTML = "blue " + ( (randomNum)+ " \u26AF" 
           setTimeout(function() {
       document.getElementById("results").textContent="Player Blue Wins";
         document.getElementById("results").style.color="#00A19D"; 
-    }, 1000);
+    }, 1500);
   }
   else if ( randomNum < randomNumD2 ){
            setTimeout(function() {
               document.getElementById("results").textContent="Player Red Wins";    
          document.getElementById("results").style.color="#DF2E2E";
-    }, 1000);
+    }, 1500);
   }
 
   else {   
            setTimeout(function() {
    document.getElementById("results").textContent="DRAW";           
          document.getElementById("results").style.color="#6ECB63";
-      }, 1000);
+      }, 1500);
   }
 
 if (randomNum === 1) {
