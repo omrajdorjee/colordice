@@ -1,6 +1,7 @@
 body {
   background-color: #20deff;
-  max-height: 100%;
+  overflow: hidden;
+  height: 100vh;
 }
 
 #welcome-text {
@@ -97,7 +98,7 @@ a:hover {
   /* displaying three buttons in one line */
   .options {
     position: relative;
-    top: 10%;
+    top: 7%;
     margin: auto;
     z-index: 1;
     min-width: 300px;
@@ -136,7 +137,7 @@ a:hover {
     width: 70px;
     font-size: 12px;
     border-radius: 10px;
-    background: #00c1f1;
+    background: #17d7cd;
     outline: none;
     color: #000000;
     border: none;
@@ -168,8 +169,11 @@ a:hover {
 
   /* Reload button style */
   .reload {
+    position: absolute;
+    bottom: 25%;
+    left: 40%;
     display: none;
-    margin: 17rem auto;
+    margin: auto;
     padding: 1rem;
     background: rgb(73, 246, 73);
     outline: none;
