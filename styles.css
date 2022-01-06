@@ -301,49 +301,85 @@ font-family: 'Righteous', cursive;
     width: 30px;
     height: 30px;
   }
- .colorBg1 {
-    display: block;
+  .colorBg1 {
+    display: inline-block;
     border: none;
     background-color: #ffccd2;
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
+  width: 20px;
+    height:20px;
+    border-radius: 20px;
     margin: 8px auto;
   }
   .colorBg2 {
-    display: block;
+    display: inline-block;
     border: none;
     background-color: #FFC900;
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
+  width: 20px;
+    height:20px;
+    border-radius: 20px;
     margin: 8px auto;
   }
   .colorBg3 {
-    display: block;
+    display: inline-block;
     border: none;
     background-color: #EC255A;
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
+   width: 20px;
+    height:20px;
+    border-radius: 20px;
     margin: 8px auto;
   }
   .colorBg4 {
-    display: block;
+    display: inline-block;
     border: none;
     background-color: #79018C;
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
+   width: 20px;
+    height:20px;
+    border-radius: 20px;
     margin: 8px auto;
   }
   .colorBg5 {
-    display: block;
+    display: inline-block;
     border: none;
     background-color: #519259;
-    width: 120px;
-    height: 20px;
-    border-radius: 10px;
+   width: 20px;
+    height:20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg6 {
+    display: inline-block;
+    border: none;
+    background-color: #000B49;
+    width: 20px;
+    height:20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg7 {
+    display: inline-block;
+    border: none;
+    background-color: #84DFFF;
+    width: 20px;
+    height:20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg8 {
+    display: inline-block;
+    border: none;
+    background-color: #A68DAD;
+   width: 20px;
+    height:20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg9 {
+    display: inline-block;
+    border: none;
+    background-color: #6B4F4F;
+    width: 20px;
+    height:20px;
+    border-radius: 20px;
     margin: 8px auto;
   }
   P{
