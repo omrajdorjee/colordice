@@ -692,7 +692,7 @@ font-family: 'Righteous', cursive;
   color: #000000;
   background-color: rgba(0, 255, 200, 0.267);
   border-radius: 20px;
-  border: 3px dotted #000000;
+  border: 3px dotted #8b8b8b;
   display: block;
   transition: 0.3s;
 
@@ -705,8 +705,8 @@ font-family: 'Righteous', cursive;
   box-shadow: none;
   outline: none;
 
-  top: 460px;
-
+  top: 470px;
+   font-size:1rem;
   color: #666666;
   z-index: 1;
 }
