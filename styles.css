@@ -1,5 +1,7 @@
 body {
 background-image: linear-gradient(to right top, #b6f2e8, #abefed, #a2ebf2, #9ce6f7, #99e1fb, #93e1fc, #8de2fe, #86e2ff, #78e9ff, #6beffe, #62f5f9, #5ffbf1);
+overflow-x: hidden;
+height: 100vh;
 }
 h1 {
   color: rgb(255, 255, 255);
@@ -618,12 +620,12 @@ font-family: 'Righteous', cursive;
 }
 
   /* FOOTER */
-  .footer-link {
+.footer-link {
     padding-top: 1.5rem;
     padding-bottom: 0;
     margin-bottom: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-size: cover;
   }
   .footer-link:hover {
@@ -656,12 +658,9 @@ font-family: 'Righteous', cursive;
   max-height: 540px;
   height: 0%;
   width: 95.5%;
-
   position: absolute;
   z-index: 1;
-
   top: 13%;
-  /* left: 0; */
   margin: auto;
   background-color: #ffffff;
   overflow-y: hidden;
@@ -679,14 +678,15 @@ font-family: 'Righteous', cursive;
 
 .overlay-content a {
   margin: auto;
-  width: 70%;
+  width: 50%;
   text-align: center;
-  padding: 1px;
+  padding: 2px;
   text-decoration: none;
   font-size: 30px;
   color: #000000;
-  background-color: rgba(0, 255, 200, 0.493);
+  background-color: rgba(0, 255, 200, 0.267);
   border-radius: 20px;
+  border: 3px dotted #000000;
   display: block;
   transition: 0.3s;
 
