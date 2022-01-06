@@ -1,182 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  background-color: #20deff;
+  overflow: hidden;
+  height: 100vh;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roll The Dice</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./styles2.css">
+#welcome-text {
+  margin: 10% auto 10%;
+  color: rgb(37, 37, 37);
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+  /* text-shadow: #030303 0.5px 1px; */
+}
+#btn {
+  text-align: center;
+}
+.btn {
+  border-radius: 15px;
+  text-align: center;
+  font-family: monospace;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #b983ff;
+  color: #fff;
+  border-style: none;
+}
+.btn:hover {
+  background-color: #b8e4f0;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
+@media screen and (max-width: 600px) {
+  h2 {
+    z-index: 5;
+  }
+  #btn {
+    margin: 50% auto 10%;
+  }
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+  /* text-shadow: #030303 0.5px 1px; */
 
+  /* To center everything in game */
+  .game {
+    flex-direction: column;
+    height: 100vh;
+    width: 80vw;
+    align-items: center;
+  }
 
+  /* Title of the game */
+  .title {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
 
-    <link rel="icon" href="./images/favicon.ico" 
-    
-    
-    
-    <!--========GOOGLE FONTS==========-->
+  #hand1 {
+    display: inline-block;
+    margin: 10% 15%;
+    background-color: #ffffffbb;
+    border: solid 1px #000000;
+    border-radius: 10px;
+  }
+  #hand2 {
+    display: inline-block;
+    margin: 10% 10%;
+    background-color: #ffffffbb;
+    border: solid 1px #000000;
+    border-radius: 10px;
+  }
+  /* Score  */
+  .p-count,
+  .c-count {
+    text-align: center;
+    font-family: cursive;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #000000;
+    background-color: #ffffffbb;
+    border: solid 1px #000000;
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400&family=Licorice&family=Maven+Pro&family=Pacifico&family=Righteous&family=Roboto+Mono:wght@300&display=swap"
-        rel="stylesheet">
+    border-radius: 10px;
+  }
 
+  /* displaying three buttons in one line */
+  .options {
+    position: relative;
+    top: 7%;
+    margin: auto;
+    z-index: 1;
+    min-width: 300px;
+    text-align: center;
+    height: 10%;
+  }
 
+  /* Styling on all three buttons */
+  .rock {
+    padding: 0.8rem;
+    width: 70px;
+    font-size: 12px;
+    border-radius: 10px;
+    background: rgb(255, 244, 85);
+    outline: none;
+    border-color: green;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .paper {
+    padding: 0.8rem;
+    width: 70px;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #ff65f7;
+    outline: none;
+    border-color: rgb(255, 0, 242);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
 
+  .scissor {
+    padding: 0.8rem;
+    width: 70px;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #17d7cd;
+    outline: none;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .playerScore {
+    display: inline-block;
+    margin: 10% 15%;
+    z-index: 1;
+  }
+  .computerScore {
+    display: inline-block;
+    margin: 2% 10% 0;
+  }
 
-    <!-- ============ end ============ -->
-    
+  .move {
+    font-family: "Roboto Mono", monospace;
 
-</head>
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .movesleft {
+    font-family: "Roboto Mono", monospace;
 
-<body>
-    <section class="header">
+    text-align: center;
+  }
 
-        <p id="title" class="title"> Rock&#x270B;Scissor</p>
+  /* Reload button style */
+  .reload {
+    position: absolute;
+    bottom: 25%;
+    left: 40%;
+    display: none;
+    margin: auto;
+    padding: 1rem;
+    background: rgb(73, 246, 73);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
 
+  .result {
+    margin-top: 20px;
+    color: #424242;
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
+  .title {
+    text-align: center;
+  }
 
+  /* Score Board */
+  .score {
+    text-align: center;
+    display: inline-block;
+    max-width: 95.5%;
+    height: 20%;
+    color: #00d9ff;
+    background-color: rgba(192, 250, 0, 0.02);
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    text-shadow: solid 1px 2px 1px #000000;
+    font-size: 15px;
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+    z-index: 1;
+  }
 
+  .hand-sign {
+    margin-top: 40%;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+  }
+  #sectionOne {
+    background: url("./images/bannerBg.jpg");
+    background-size: cover;
+  }
+}
 
-    </section>
-
-
-    <section class="section" id="sectionOne">
-        <p id="total"></p>
-        <!-- <h5 id="results">Let's roll the dice</h5> -->
-
-        <div id="game-section">
-            <!-- <div class="title">Rock Paper Scissor</div> -->
-            
-            <!--Display Score of player and computer -->
-            <div class="score">
-                <div class="playerScore">
-                    <h2>You</h2>
-                    <p class="p-count count">0</p>
-            
-                </div>
-                <div class="computerScore">
-                    <h2>OM</h2>
-                    <p class="c-count count">0</p>
-            
-                </div>
-            </div>
-            
-            <div class="move">Choose your move</div>
-            
-            <!--Number of moves left before game ends -->
-            <div class="movesleft">Moves Left: 10 </div>
-            
-            
-            <!--Final result of game -->
-            <div class="result"></div>
-            
-            <!--Reload the game -->
-            <button class="reload">reload</button>
-            
-        </div>
-        <div id="handEmote" class="hand-sign">
-            <span id="hand1"></span>
-            <span id="hand2"></span>
-        </div>
-        
-        <!--Options available to player to play game -->
-        <div class="options">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissor">Scissors</button>
-        </div>
-        <audio id="rollingaudio" src="./audio/game-sound-3.wav"></audio>
-        <audio id="winSound" src="./audio/winSound.wav"></audio>
-        <audio id="loseSound" src="./audio/loseSound.wav"></audio>
-        <audio id="reloadSound" src="./audio/reloadSound.wav"></audio>
-        </section>
-
-    </section>
-    
-    <div id="col-overlay">
-        <div id="myNav" class="overlay">
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10006;</a>
-
-            <div class="overlay-content">
-                <p>PLAY</p>
-                    <a href="./colordice.html"><p>ColorDice &#127922;</p></a>
-                <hr>
-                <p>THEMES &#9788;</p>
-
-                <div class="bgColor">
-
-                    <button class="colorBg1" onclick="changeBodyBg('#FFCCD2')"></button>
-                    <button class="colorBg2" onclick="changeBodyBg('#FFC900')"></button>
-                    <button class="colorBg3" onclick="changeBodyBg('#EC255A')"></button>
-                    <button class="colorBg4" onclick="changeBodyBg('#79018C')"></button>
-                    <button class="colorBg5" onclick="changeBodyBg('#519259')"></button>
-                    <button class="colorBg7" onclick="changeBodyBg('#84DFFF')"></button>
-                    <button class="colorBg8" onclick="changeBodyBg('#A68DAD')"></button>
-                    <button class="colorBg9" onclick="changeBodyBg('#6B4F4F')"></button>
-                    <button class="colorBg9" onclick="changeBodyBg('#6B4F4F')"></button>
-
-                </div>
-                <p>LOFI &#9836;</p>
-                <audio id="au1">
-                    <source src="./audio/Lost.mp3" type="audio/mp3">
-                </audio>
-                <audio id="au2" class="au">
-                    <source src="./audio/Blue.mp3" type="audio/mp3">
-                </audio>
-                <audio id="au3" class="au">
-                    <source src="./audio/Invisible.mp3" type="audio/mp3">
-                </audio>
-                <audio id="au4" class="au">
-                    <source src="./audio/saidTheSky.mp3" type="audio/mp3">
-                </audio>
-                <audio id="au5" class="au">
-                    <source id="a6" src="./audio/StillKids.mp3" type="audio/mp3">
-                </audio>
-                <audio id="au6" class="au">
-                    <source src="./audio/softness.mp3" type="audio/mp3">
-                </audio>
-
-
-                <div class="container-au">
-                    <hr>
-                    <button class="audio dio1" onclick="playAudio('au1')" type="button">Lost </button>
-                    <button class="audio dio2" onclick="playAudio('au2')" type="button">Hazy Night</button>
-                    <button class="audio dio3" onclick="playAudio('au3')" type="button">The Sky</button>
-                    <button class="audio dio4" onclick="playAudio('au4')" type="button">Still Kids</button>
-                    <button class="audio dio5" onclick="playAudio('au5')" type="button">Invisible</button>
-                    <button class="audio dio6" onclick="playAudio('au6')" type="button">Softness</button>
-
-                    <hr>
-                    <!-- <button id="stopButton" type="button">Pause Audio</button> -->
-                    <input id="stopButton" class="audio" type="button" value="Stop Audio" />
-                </div>
-            </div>
-
-
-        </div>
-        <div class="openNav">
-            <div class="nav-open " cursor:pointer" onclick="openNav()"> Secret Zone </div>
-        </div>
-
-        <footer>
-            <p class="creator">MADE WITH 🖤 BY OM</p>
-
-            <hr>
-            <a class="footer-link" href="https://twitter.com/omrajdorz"><img class="footer-link"
-                    src="./images/twitter-two.png" alt=""></a>
-            <a class="footer-link" href="#"><img class="footer-link"
-                    src="./images/github.png" alt=""></a>
-            <a class="footer-link" href="#"> <img class="footer-link" src="./images/insta-one.png" alt=""></a>
-        </footer>
-
-        <script src="./rpsmain.js"></script>
-        <script src="./main.js"></script>
-
-</body>
-
-</html>
+#btn {
+  text-align: center;
+}
+.btn {
+  border-radius: 15px;
+  text-align: center;
+  font-family: monospace;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #b983ff;
+  color: #fff;
+  border-style: none;
+}
+.btn:hover {
+  background-color: #b8e4f0;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
