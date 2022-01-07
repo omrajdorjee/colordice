@@ -49,8 +49,7 @@ const game = () => {
 		const computerScoreBoard = document.querySelector('.c-count');
 		player = player.toLowerCase();
 		computer = computer.toLowerCase();
-		if(player === computer){
-            
+		if(player === computer){           
 			result.textContent = 'Tie';
             if(player === 'rock' && computer === 'rock') {
             document.getElementById('hand1').textContent = "✊";
@@ -77,6 +76,8 @@ const game = () => {
 				result.textContent = 'You Won'
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
+				document.getElementById('hand1').textContent = "✊";	
+                document.getElementById('hand2').textContent = "✌️";
 			}
 		}
 		else if(player == 'scissors'){
@@ -91,6 +92,9 @@ const game = () => {
 				result.textContent = 'You Won';
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
+				document.getElementById('hand1').textContent = "✌️";
+                document.getElementById('hand1').textContent = "🖐️";
+
 			}
 		}
 		else if(player == 'paper'){
@@ -106,6 +110,10 @@ const game = () => {
 				result.textContent = 'You Won';
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
+			    document.getElementById('hand1').textContent = "🖐️";
+                document.getElementById('hand2').textContent = "✊";
+
+
 			}
 		}
 	}
