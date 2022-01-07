@@ -38,6 +38,8 @@ const game = () => {
 					gameOver(playerOptions,movesLeft);
 				}
 			})
+				var audio = document.getElementById("reloadSound");
+		                audio.play();
 		})
 		
 	}
