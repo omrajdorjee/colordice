@@ -79,7 +79,7 @@ const game = () => {
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
 				document.getElementById('hand1').textContent = "✊";	
-                document.getElementById('hand2').textContent = "✌️";
+                                document.getElementById('hand2').textContent = "✌️";
 			}
 		}
 		else if(player == 'scissors'){
@@ -95,7 +95,7 @@ const game = () => {
 				playerScore++;
 				playerScoreBoard.textContent = playerScore;
 				document.getElementById('hand1').textContent = "✌️";
-                document.getElementById('hand1').textContent = "🖐️";
+                                document.getElementById('hand2').textContent = "🖐️";
 
 			}
 		}
