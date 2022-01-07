@@ -265,10 +265,11 @@ font-family: 'Roboto Mono', monospace;
 
 }
 hr {
-  border: 1px solid #8b8b8b;
-  width: 50%;
+  border: 2px solid #8b8b8b6b;
+  width: 10%;
   border-style: dashed;
   border-bottom: none;
+
 }
 .p1{
   left: 10%;
@@ -281,29 +282,28 @@ margin: 0px;
 padding: 20px;
 }
 #total{
-  color:rgb(75, 75, 75);
+  color:rgba(110, 110, 110, 0.89);
   text-align: center;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.3rem;
+  font-family: monospace;
+  font-size: 1rem;
   transition: all 0.5s;
 }
   #title {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0 0 0 10px;
-    margin: 0;
+    margin: 2px 0 10px;
     position: relative;
-font-family: 'Pacifico', cursive;
-    top: 0;
-text-align: left; 
-width: 100%;
+    font-family: 'Pacifico', cursive;
+    text-align: left; 
+    width: 100%;
  }
 
   #results {
-font-family: 'Righteous', cursive;
+    font-family: monospace;
     color: #464646;
-    font-size: 1.5rem;
-   
+    font-size: 1rem;
+     
   }
   .logo-img {
     width: 30px;
@@ -429,13 +429,13 @@ font-family: 'Righteous', cursive;
 
 }
 #stopButton {
-  margin-top:5px;
-  background-color: #ffffff7e;
-  color: #000000;
-  z-index: 1;
-  border:solid 1px #ff0000;
-  /* border-style: none; */
-  height: 40px;
+    margin: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: #3f3f3f;
+    z-index: 1;
+    border: solid 1px #ff0000;
+    /* border-style: none; */
+    height: 40px;
 }
 #stopButton:hover {
   background-color: #fffefe;
@@ -588,16 +588,16 @@ font-family: 'Righteous', cursive;
     visibility: visible;
   }
 
-  #btn {
+ #btn {
     position: relative;
     top: 10px;
-    background-color: #3bebf1d7;
+    background-color: #3bebf142;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    width: 80px;
-    height: 80px;
-    border: none;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #00f7ff7c;
     border-radius: 50%;
     font-size: 2rem;
     padding: 10px;
@@ -640,14 +640,14 @@ font-family: 'Righteous', cursive;
 
   #dice-section {
     position: relative;
-    background-color: rgba(212, 212, 212, 0);
+    background-color: #d4d4d400;
     text-align: center;
     padding: 3%;
     margin-top: 10%;
     width: 90%;
   }
   #sectionOne {
-    background-color: #ffffff;
+    background-color: #fff6f6;
     height: 70vh;
     border: solid 1px #fff;
     border-radius: 20px;
@@ -661,52 +661,51 @@ font-family: 'Righteous', cursive;
   text-align: center;
 }
 .overlay {
-  max-height: 540px;
-  height: 0%;
-  width: 95.5%;
-  position: absolute;
-  z-index: 1;
-  top: 13%;
-  margin: auto;
-  background-color: #ffffff;
-  overflow-y: hidden;
-  transition: 0.5s;
-  border-radius: 20px;
+    max-height: 540px;
+    height: 0%;
+    width: 95.5%;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin: auto;
+    background-color: #fff6f6;
+    overflow-y: hidden;
+    transition: 0.5s;
+    border-radius: 20px;
 }
 
 .overlay-content {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  font-family: monospace;
-  color: #000000;
+     width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    color: #5a5a5a;
+    background-color:#ffffff;
+    border: dashed 1px #7070703b;
+    border-radius: 20px;
 }
 
 .overlay-content a {
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  padding: 2px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #000000;
-  background-color: rgba(0, 255, 200, 0.267);
-  border-radius: 20px;
-  border: 3px dotted #8b8b8b;
-  display: block;
-  transition: 0.3s;
-
+     margin: 0px auto 5px;
+    width: 50%;
+    height:30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: #4e4e4e;
+    font-family: "Pacifico", cursive;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* border: 3px dotted #6e6a6a13; */
+    display: block;
 }
-
-
 
 .overlay .closebtn {
   position: relative;
   box-shadow: none;
   outline: none;
-
   top: 470px;
-   font-size:1rem;
+  font-size: 1.6rem;
   color: #666666;
   z-index: 1;
 }
@@ -718,29 +717,33 @@ font-family: 'Righteous', cursive;
 
 }
 .nav-open {
-  margin: 5px auto;
-  width: 30%;
-  height: 15px;
-  border-radius:15px;
-  background-color: #ffffff;
-  color: #797979;
-  z-index: 1;
-  padding: 5px ;
-  font-family:monospace;
-  font-size: 13px;
-  border-bottom: solid 2px rgb(172, 172, 172);
+    margin: 0px auto;
+    width: 30%;
+    height: 12px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #000000c5;
+    color: #bebebe;
+    z-index: 1;
+    padding: 0px 0 3px;
+    font-family: monospace;
+    font-size: 12px;
+    border-bottom: solid 2px #acacac;
 }
 .audio {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #000000;
+  font-size: 12px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular';
+  color: #0000009a;
 }
 
 #fightImg{
   text-align: center;
 }
 .fight-img {
-  width: 60px;
-  height: 60px;8
+   width: 40px;
+    height: 40px;
 }
 }
 
