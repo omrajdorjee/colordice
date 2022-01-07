@@ -74,12 +74,30 @@ hr {
   transition: all 2s;
 }
 .dice-one {
-background: rgb(0,101,184);
-background: radial-gradient(circle, #46b4c0 65%, #2d9fe0 100%);
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #46d0e9,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #46d0e9,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .dice-two {
-background: #0065b8;
-background: radial-gradient(circle, #e66f5a 65%, #e74d57 100%);
+  background: #ed213a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ca4a3c,
+    #ed213a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ca4a3c,
+    #ed213a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .ran-num {
@@ -590,7 +608,7 @@ padding: 20px;
 
  #btn {
     position: relative;
-    top: 10px;
+    top: 4.5rem;
     background-color: #3bebf142;
     text-decoration: none;
     cursor: pointer;
