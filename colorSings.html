@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Pills</title>
+
+
+    <link rel="stylesheet" href="../styles/colorSingStyles.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="icon" href="./images/favicon.ico" 
+    
+    <!--========GOOGLE FONTS==========-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300;400&family=Licorice&family=Maven+Pro&family=Pacifico&family=Righteous&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
+
+<!-- Load FontAwesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+    <!-- ============ end ============ -->
+
+</head>
+
+<body>
+    <section class="header">
+
+        <p id="title" class="title"> ColorPills&#9836;</p>
+
+    </section>
+
+
+    <section class="section" id="sectionOne">
+        
+            <button class="audio dio1" onclick="playAudio('au1')"   type="button">Fuchsia</button>
+            <button class="audio dio2" onclick="playAudio('au2')"   type="button">softness</button>
+            <button class="audio dio3" onclick="playAudio('au3')"    type="button">Without You</button>
+            <button class="audio dio4" onclick="playAudio('au4')"   type="button">Said The Sky</button>
+            <button class="audio dio5" onclick="playAudio('au5')"   type="button">Plum</button>
+            <button class="audio dio6" onclick="playAudio('au6')"   type="button">And So It begins</button>
+            <button class="audio dio7" onclick="playAudio('au7')"   type="button">Blue</button>
+            <button class="audio dio8" onclick="playAudio('au8')"   type="button">All Your</button>
+            <button class="audio dio9" onclick="playAudio('au9')"   type="button">Chill</button>
+            <button class="audio dio10" onclick="playAudio('au10')" type="button">Dancing</button>
+            <button class="audio dio11" onclick="playAudio('au11')" type="button">Good Old Days</button>
+            <button class="audio dio12" onclick="playAudio('au12')" type="button">Happier</button>
+            <button class="audio dio13" onclick="playAudio('au13')" type="button">Daze Amore</button>
+            <button class="audio dio14" onclick="playAudio('au14')" type="button">Invisible</button>
+            <button class="audio dio15" onclick="playAudio('au15')" type="button">Last Summer</button>
+            <button class="audio dio16" onclick="playAudio('au16')" type="button">For long Time</button>
+            <button class="audio dio17" onclick="playAudio('au17')" type="button">Ocean Away</button>
+            <button class="audio dio18" onclick="playAudio('au18')" type="button">Out Loud</button>
+            <button class="audio dio19" onclick="playAudio('au19')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <!-- <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
+            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button> -->
+            <hr>
+                        <input ="pauseAudio" class="audio" type="button" value="Stop Audio" />
+<hr>
+           
+
+        <div id="player-section">
+<div class="player">
+
+    <!-- Define the section for displaying details -->
+    <div class="details">
+        <!-- <div class="now-playing">PLAYING x OF y</div> -->
+        <!-- <div class="track-art"></div> -->
+        <div class="track-name"></div>
+        <!-- <div class="track-artist">Track Artist</div> -->
+    </div>
+
+    <!-- Define the section for displaying track buttons -->
+    <div  id="stopButton"  class="buttons">
+        <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-1x"></i>
+        </div>
+        <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-2x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-1x"></i>
+        </div>
+    </div>
+
+    <!-- Define the section for displaying the seek slider-->
+    <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+    </div>
+
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+    </div>
+</div>
+
+        </div>
+
+    </section>
+
+    <div id="col-overlay">
+        <div id="myNav" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10006;</a>
+
+            <div class="overlay-content">
+                <hr>
+                <p>THEMES &#9788;</p>
+
+                <div class="bgColor">
+
+                    <button class="colorBg1" onclick="changeBodyBg('#FFCCD2')"></button>
+                    <button class="colorBg2" onclick="changeBodyBg('#FFC900')"></button>
+                    <button class="colorBg3" onclick="changeBodyBg('#EC255A')"></button>
+                    <button class="colorBg4" onclick="changeBodyBg('#79018C')"></button>
+                    <button class="colorBg5" onclick="changeBodyBg('#519259')"></button>
+                    <!-- <button class="colorBg6" onclick="changeBodyBg('#000B49')"></button> -->
+                    <button class="colorBg7" onclick="changeBodyBg('#84DFFF')"></button>
+                    <button class="colorBg8" onclick="changeBodyBg('#A68DAD')"></button>
+                    <button class="colorBg9" onclick="changeBodyBg('#6B4F4F')"></button>
+                    <button class="colorBg9" onclick="changeBodyBg('#009DAE')"></button>
+                    <!-- <button class="colorBg9" onclick="changeBodyBg('#6B4F4F')"></button> -->
+
+                </div>
+                <hr>
+                <p>PLAY &#9816;</p>
+                <a href="./scpaprok.html">
+                    <p>RockPaperScissors</p>
+                   
+                </a>
+                <!-- <p>LOFI &#9834;</p> -->
+            
+               
+    <audio id="au2" class="au"><source src="./assets/softness.mp3" type="audio/mp3"></audio>
+    <audio id="au3" class="au"><source src="./assets/Runaways.mp3" type="audio/mp3"></audio>
+    <audio id="au4" class="au"><source src="./assets/Without You.mp3" type="audio/mp3"></audio>
+    <audio id="au5" class="au"><source src="./assets/saidTheSky.mp3" type="audio/mp3"></audio>
+    <audio id="au6" class="au"><source src="./assets/PLUM.mp3" type="audio/mp3"></audio>
+    <audio id="au7" class="au"><source src="./assets/And so it begin.mp3" type="audio/mp3"></audio>
+    <audio id="au8" class="au"><source src="./assets/Blue.mp3" type="audio/mp3"></audio>
+    <audio id="au9" class="au"><source src="./assets/allYourLove.mp3" type="audio/mp3"></audio>
+    <audio id="au10" class="au"><source src="./assets/ChillLofi1.mp3" type="audio/mp3"></audio>
+    <audio id="au11" class="au"><source src="./assets/dancing with my ghost.mp3" type="audio/mp3"></audio>
+    <audio id="au12" class="au"><source src="./assets/good all days.mp3" type="audio/mp3"></audio>
+    <audio id="au13" class="au"><source src="./assets/Happier.mp3" type="audio/mp3"></audio>
+    <audio id="au14" class="au"><source src="./assets/HueyDazeAmore.mp3" type="audio/mp3"></audio>
+    <audio id="au15" class="au"><source src="./assets/Invisible.mp3" type="audio/mp3"></audio>
+    <audio id="au16" class="au"><source src="./assets/Last Summer.mp3" type="audio/mp3"></audio>
+    <audio id="au17" class="au"><source src="./assets/love for a long time.mp3" type="audio/mp3"></audio>
+    <audio id="au18" class="au"><source src="./assets/Oceans Away .mp3" type="audio/mp3"></audio>
+    <audio id="au19" class="au"><source src="./assets/out loud.mp3" type="audio/mp3"></audio>
+    <!-- <audio id="au20" class="au"><source src="./assets/" type="audio/mp3"></audio> -->
+
+
+
+                <div class="container-au">
+                    <hr>
+                <p>ColorDice</p>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        <div class="openNav">
+            <div class="nav-open " cursor:pointer" onclick="openNav()">Secret Zone</div>
+        </div>
+
+        <footer>
+            <p class="creator">MADE WITH 🖤 BY OM</p>
+
+            <hr>
+            <a class="footer-link" href="https://twitter.com/omrajdorz"><img class="footer-link"
+                    src="./images/twitter-two.png" alt=""></a>
+            <a class="footer-link" href="#"><img class="footer-link" src="./images/github.png" alt=""></a>
+            <a class="footer-link" href="#"> <img class="footer-link" src="./images/insta-one.png" alt=""></a>
+        </footer>
+
+        <script src="../appjs/singmain.js"></script>
+        <!-- <script src="../appjs/main.js"></script> -->
+
+</body>
+
+</html>
