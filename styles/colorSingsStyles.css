@@ -1,0 +1,533 @@
+body {
+  background-color: rgb(255, 255, 255);
+
+  /* Smoothly transition the background color */
+  transition: background-color 0.5s;
+}
+
+/* Using flex with the column direction to
+   align items in a vertical direction */
+#player-section {
+  text-align: center;
+}
+.player {
+  position: relative;
+  bottom: 0;
+  margin: 20px 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+
+
+/* Changing the font sizes to suitable ones */
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 0,7rem;
+  margin: 10px;
+  font-family: monospace;
+}
+
+.track-artist {
+  font-size: 0.5rem;
+}
+
+/* Using flex with the row direction to
+   align items in a horizontal direction */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 2px 20px;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity 0.2s;
+}
+
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1;
+}
+
+/* Define the slider width so that it scales properly */
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer
+   when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #player-name p {
+    width: 10%;
+    display: inline-block;
+    position: absolute;
+    font-family: "Roboto Mono", monospace;
+  }
+  hr {
+    border: 2px solid #8b8b8b6b;
+    width: 95.5%;
+    /* border-style: dashed; */
+    border-bottom: none;
+  }
+  .p1 {
+    left: 10%;
+    margin: 0px;
+    padding: 20px;
+  }
+  .p2 {
+    right: 10%;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  #title {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 0 0 10px;
+    margin: 2px 0 10px;
+    position: relative;
+    font-family: "Pacifico", cursive;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* =========== =================================================================*/
+  /* ==== AUDIO PIlls =================================*/
+  /* ================================================================= */
+
+  .audio {
+    background-color: #f05454;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 7px 10px;
+    border: none;
+    margin: 5px;
+    /* display: block;   */
+  }
+
+  .dio1 {
+    background-color: #ff67e7;
+  }
+  .dio2 {
+    background-color: #28ffbf;
+  }
+  .dio3 {
+    background-color: #79dbff;
+  }
+  .dio4 {
+    background-color: #fff338;
+  }
+  .dio5 {
+    background-color: #ffbcbc;
+  }
+  .dio6 {
+    background-color: #b4ffbf;
+  }
+
+  .dio7 {
+    background-color: #d5eebb;
+  }
+
+  .dio8 {
+    background-color: #7fc8a9;
+  }
+
+  .dio9 {
+    background-color: #7c83fd;
+  }
+
+  .dio10 {
+    background-color: #b4ffbf;
+  }
+
+  .dio11 {
+    background-color: #c1cfc0;
+  }
+
+  .dio12 {
+    background-color: #e7e0c9;
+  }
+
+  .dio13 {
+    background-color: #fef7dc;
+  }
+
+  .dio14 {
+    background-color: #bfa2db;
+  }
+
+  .dio15 {
+    background-color: #b4ffbf;
+  }
+
+  .dio16 {
+    background-color: #f0d9ff;
+  }
+
+  .dio17 {
+    background-color: #f7dbf0;
+  }
+
+  .dio18 {
+    background-color: #ffb830;
+  }
+
+  .dio19 {
+    background-color: #ffedda;
+  }
+
+  .dio20 {
+    background-color: #3db2ff;
+  }
+
+  /* =========== =================================================================*/
+  /* ==== AUDIO PIlls  End=================================*/
+  /* ================================================================= */
+
+  .colorBg1 {
+    display: inline-block;
+    border: none;
+    background-color: #ffccd2;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg2 {
+    display: inline-block;
+    border: none;
+    background-color: #ffc900;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg3 {
+    display: inline-block;
+    border: none;
+    background-color: #ec255a;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg4 {
+    display: inline-block;
+    border: none;
+    background-color: #79018c;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg5 {
+    display: inline-block;
+    border: none;
+    background-color: #519259;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg6 {
+    display: inline-block;
+    border: none;
+    background-color: #000b49;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg7 {
+    display: inline-block;
+    border: none;
+    background-color: #84dfff;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg8 {
+    display: inline-block;
+    border: none;
+    background-color: #a68dad;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg9 {
+    display: inline-block;
+    border: none;
+    background-color: #6b4f4f;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  .colorBg10 {
+    display: inline-block;
+    border: none;
+    background-color: #6b4f4f;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 8px auto;
+  }
+  P {
+    font-size: 15px;
+  }
+  .bgColor {
+    position: relative;
+    visibility: visible;
+  }
+
+  .container-au {
+    text-align: center;
+    /* margin: auto; */
+  }
+
+  .audio:hover {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 7px 10px;
+    border: solid 1px #000000;
+  }
+  #stopButton {
+    margin: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: #3f3f3f;
+    z-index: 1;
+    border: solid 1px #ff0000;
+    /* border-style: none; */
+    height: 40px;
+  }
+  #stopButton:hover {
+    background-color: #fffefe;
+    color: #000000;
+    border: solid 1px #000000;
+    z-index: 1;
+  }
+
+  .toggle {
+    visibility: hidden;
+    /* background-color:#fff; */
+  }
+  .toggleMid {
+    /* background-color: #fff; */
+    visibility: visible;
+  }
+
+  footer {
+    font-size: 5px;
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+  }
+  .creator {
+    font-size: 10px;
+  }
+
+  /* FOOTER */
+  .footer-link {
+    padding: 10px 10px 0px;
+    margin-bottom: 0;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+  }
+  .footer-link:hover {
+    color: #00eaff;
+  }
+
+  #dice-section {
+    position: relative;
+    background-color: #d4d4d400;
+    text-align: center;
+    padding: 3%;
+    margin-top: 10%;
+    width: 90%;
+  }
+  #sectionOne {
+    background-color: #fff6f6;
+    height: 80vh;
+    border: solid 1px #fff;
+    border-radius: 20px;
+  }
+
+  #col-overlay {
+    visibility: visible;
+    text-align: center;
+  }
+  #myNav {
+    text-align: center;
+  }
+  .overlay {
+    max-height: 540px;
+    height: 0%;
+    width: 95.5%;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin: auto;
+    background-color: #fff6f6;
+    overflow-y: hidden;
+    transition: 0.5s;
+    border-radius: 20px;
+  }
+
+  .overlay-content {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    border: dashed 1px #7070703b;
+    border-radius: 20px;
+  }
+
+  .overlay-content a {
+    margin: 0px auto 5px;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: #4e4e4e;
+    font-family: "Pacifico", cursive;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* border: 3px dotted #6e6a6a13; */
+    display: block;
+  }
+
+  .overlay .closebtn {
+    position: relative;
+    box-shadow: none;
+    outline: none;
+    top: 460px;
+    font-size: 1.6rem;
+    color: #666666;
+    z-index: 1;
+  }
+
+  .openNav {
+    text-align: center;
+    z-index: 1;
+  }
+  .nav-open {
+    margin: 0px auto;
+    width: 30%;
+    height: 12px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #000000c5;
+    color: #bebebe;
+    z-index: 1;
+    padding: 0px 0 3px;
+    font-family: monospace;
+    font-size: 12px;
+    border-bottom: solid 2px #acacac;
+  }
+  .audio {
+    font-size: 12px;
+    font-family: "Lucida Sans", "Lucida Sans Regular";
+    color: #0000009a;
+  }
+
+}
+
+#stopButton {
+    border: none;
+    background: none;
+}
+#stopButton:hover {
+    border: none;
+    background: none;
+}
