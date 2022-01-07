@@ -45,12 +45,12 @@ a:hover {
     z-index: 5;
   }
   #btn {
-    margin: 50% auto 10%;
-  }
+   margin: 50% auto 10%;
   text-align: center;
   font-size: 2rem;
   font-family: "Righteous", cursive;
-  /* text-shadow: #030303 0.5px 1px; */
+  }
+
 
   /* To center everything in game */
   .game {
@@ -61,37 +61,44 @@ a:hover {
   }
 
   /* Title of the game */
-  .title {
-    position: absolute;
-    top: 0;
-    z-index: 2;
+  #title {
+    text-align: left;
+    font-size: 2rem;
+    margin: 2px 0 10px;
+  }
+   .headerImage {
+    width: 40px;
+    height: 30px;
   }
 
-  #hand1 {
+ #hand1 {
     display: inline-block;
-    margin: 10% 15%;
-    background-color: #ffffffbb;
-    border: solid 1px #000000;
+    margin: 5% 15%;
+    font-size: 2.5rem;
+    background-color: #ffffff;
+    border: solid 1px #00eaff;
     border-radius: 10px;
+    text-shadow: 2px 2px 14px #afafaf;
   }
   #hand2 {
     display: inline-block;
-    margin: 10% 10%;
-    background-color: #ffffffbb;
-    border: solid 1px #000000;
+    margin: 5% 10%;
+    font-size: 2.5rem;
+    background-color: #ffffff;
+    border: solid 1px #00eaff;
     border-radius: 10px;
+    text-shadow: 2px 2px 14px #afafaf;
   }
   /* Score  */
   .p-count,
   .c-count {
-    text-align: center;
+     text-align: center;
     font-family: cursive;
     font-size: 1rem;
     margin-top: 1rem;
-    color: #000000;
-    background-color: #ffffffbb;
-    border: solid 1px #000000;
-
+    color: #00b5c5;
+    background-color: #ffffff;
+    border: solid 1px #6b6b6b;
     border-radius: 10px;
   }
 
