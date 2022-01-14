@@ -28,92 +28,121 @@
 
 </head>
 
+
 <body>
     <section class="header">
 
-        <p id="title" class="title"> ColorPills&#9836;</p>
+        <p id="title" class="title"> Colorpills &#9834;</p>
 
     </section>
 
 
     <section class="section" id="sectionOne">
-        
-            <button class="audio dio1" onclick="playAudio('au1')"   type="button">Fuchsia</button>
-            <button class="audio dio2" onclick="playAudio('au2')"   type="button">softness</button>
-            <button class="audio dio3" onclick="playAudio('au3')"    type="button">Without You</button>
-            <button class="audio dio4" onclick="playAudio('au4')"   type="button">Said The Sky</button>
-            <button class="audio dio5" onclick="playAudio('au5')"   type="button">Plum</button>
-            <button class="audio dio6" onclick="playAudio('au6')"   type="button">And So It begins</button>
-            <button class="audio dio7" onclick="playAudio('au7')"   type="button">Blue</button>
-            <button class="audio dio8" onclick="playAudio('au8')"   type="button">All Your</button>
-            <button class="audio dio9" onclick="playAudio('au9')"   type="button">Chill</button>
-            <button class="audio dio10" onclick="playAudio('au10')" type="button">Dancing</button>
-            <button class="audio dio11" onclick="playAudio('au11')" type="button">Good Old Days</button>
-            <button class="audio dio12" onclick="playAudio('au12')" type="button">Happier</button>
-            <button class="audio dio13" onclick="playAudio('au13')" type="button">Daze Amore</button>
-            <button class="audio dio14" onclick="playAudio('au14')" type="button">Invisible</button>
-            <button class="audio dio15" onclick="playAudio('au15')" type="button">Last Summer</button>
-            <button class="audio dio16" onclick="playAudio('au16')" type="button">For long Time</button>
-            <button class="audio dio17" onclick="playAudio('au17')" type="button">Ocean Away</button>
-            <button class="audio dio18" onclick="playAudio('au18')" type="button">Out Loud</button>
-<!--             <button class="audio dio19" onclick="playAudio('au19')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button> -->
-            <!-- <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button>
-            <button class="audio dio20" onclick="playAudio('au20')" type="button">Dreams</button> -->
-            <hr>
-                        <input ="pauseAudio" class="audio" type="button" value="Stop Audio" />
-<hr>
-           
-
-        <div id="player-section">
-<div class="player">
-
-    <!-- Define the section for displaying details -->
-    <div class="details">
-        <!-- <div class="now-playing">PLAYING x OF y</div> -->
-        <!-- <div class="track-art"></div> -->
-        <div class="track-name"></div>
-        <!-- <div class="track-artist">Track Artist</div> -->
-    </div>
-
-    <!-- Define the section for displaying track buttons -->
-    <div  id="stopButton"  class="buttons">
-        <div class="prev-track" onclick="prevTrack()">
-            <i class="fa fa-step-backward fa-1x"></i>
-        </div>
-        <div class="playpause-track" onclick="playpauseTrack()">
-            <i class="fa fa-play-circle fa-2x"></i>
-        </div>
-        <div class="next-track" onclick="nextTrack()">
-            <i class="fa fa-step-forward fa-1x"></i>
-        </div>
-    </div>
-
-    <!-- Define the section for displaying the seek slider-->
-    <div class="slider_container">
-        <div class="current-time">00:00</div>
-        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-        <div class="total-duration">00:00</div>
-    </div>
-
-    <!-- Define the section for displaying the volume slider-->
-    <div class="slider_container">
-        <i class="fa fa-volume-down"></i>
-        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-        <i class="fa fa-volume-up"></i>
-    </div>
+<div class="chillVibe songList">
+    <h1>Chill Vibe</h1>
+    <hr>
+        <button id="btn1" class="playpause-track audio dio1" onclick="playAudio('au1','btn1')"
+            type="button">Fuchsia</button>
+        <button id="btn2" class="playpause-track audio dio2" onclick="playpauseTrack('au2','btn2')"
+            type="button">softness</button>
+            <button id="btn6" class="audio dio6" onclick="playpauseTrack('au6','btn6')" type="button">PLUM</button>
+            <button id="btn10" class="audio dio10" onclick="playpauseTrack('au10','btn10')" type="button">ChillLofi</button>
+            <button id="btn14" class="audio dio14" onclick="playpauseTrack('au14','btn14')" type="button">Daze</button>
+       
 </div>
+       
+       
+       <div class="popSong songList">
+          <h1>pop</h1>
+          <hr >
+        <button id="btn3" class="audio dio3" onclick="playpauseTrack('au3','btn3')" type="button">Runaways</button>
+        <button id="btn4" class="audio dio4" onclick="playpauseTrack('au4','btn4')" type="button">Without You</button>
+        <button id="btn5" class="audio dio5" onclick="playpauseTrack('au5','btn5')" type="button">Said The Sky</button>
+        <button id="btn7" class="audio dio7" onclick="playpauseTrack('au7','btn7')" type="button">So It Begins</button>
+        <button id="btn8" class="audio dio8" onclick="playpauseTrack('au8','btn8')" type="button">Blue</button>
+        <button id="btn9" class="audio dio9" onclick="playpauseTrack('au9','btn9')" type="button">All Your Love</button>
+       
+        <button id="btn11" class="audio dio11" onclick="playpauseTrack('au11','btn11')" type="button">Dancing</button>
+        <button id="btn12" class="audio dio12" onclick="playpauseTrack('au12','btn12')" type="button">Good old
+            Days</button>
+        <button id="btn13" class="audio dio13" onclick="playpauseTrack('au13','btn13')" type="button">Happier</button>
+      
+        <button id="btn15" class="audio dio15" onclick="playpauseTrack('au15','btn15')" type="button">Invisible</button>
+        <button id="btn16" class="audio dio16" onclick="playpauseTrack('au16','btn16')" type="button">Last
+            Summer</button>
+        <button id="btn17" class="audio dio17" onclick="playpauseTrack('au17','btn17')" type="button">For long
+            Time</button>
+        <button id="btn18" class="audio dio18" onclick="playpauseTrack('au18','btn18')" type="button">Ocean</button>
+        <button id="btn19" class="audio dio19" onclick="playpauseTrack('au19','btn19')" type="button">Out Loud</button>
+        <button id="btn20" class="audio dio20" onclick="playpauseTrack('au20','btn20')" type="button"
+            style="background-color:#74505d;">Dreams</button>
+        <button id="btn21" class="audio dio20" onclick="playpauseTrack('au21','btn21')" type="button"
+            style="background-color:#6E3CBC;">Dreams</button>
+        <button id="btn22" class="audio dio20" onclick="playpauseTrack('au22','btn22')" type="button"
+            style="background-color:#7267CB;">Dreams</button>
+        <button id="btn23" class="audio dio20" onclick="playpauseTrack('au23','btn23')" type="button"
+            style="background-color:#009DAE;">Dreams</button>
+        <button id="btn24" class="audio dio20" onclick="playpauseTrack('au24','btn24')" type="button"
+            style="background-color:#ff004c;">Dreams</button>
+        <button id="btn25" class="audio dio20" onclick="playpauseTrack('au25','btn25')" type="button"
+            style="background-color:#116530;">Dreams</button>
+        <button id="btn26" class="audio dio20" onclick="playpauseTrack('au26','btn26')" type="button"
+            style="background-color:#105652;">Dreams</button>
+      
+        <button id="btn27" class="audio dio20" onclick="playpauseTrack('au27','btn27')" type="button" style="background-color:#54bb00;">Dreams</button>
+        <button id="btn28" class="audio dio20" onclick="playpauseTrack('au28','btn28')" type="button" style="background-color:#FF8E00;">Dreams</button>
+        <button id="btn29" class="audio dio20" onclick="playpauseTrack('au39','btn29')" type="button" style="background-color:#FFE400;">Dreams</button>
+        <button id="btn30" class="audio dio20" onclick="playpauseTrack('au30','btn30')" type="button" style="background-color:#06FF00;">Dreams</button>
+        <button id="btn31" class="audio dio20" onclick="playpauseTrack('au31','btn31')" type="button" style="background-color:#2F3A8F;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+        <button id="btn32" class="audio dio20" onclick="playpauseTrack('au32','btn32')" type="button" style="background-color:#7da8ff;">Dreams</button>
+       </div>
+       
+       
+          <div class="mood songList">
+              <h1>mood</h1>
+              <hr>
+        <button id="btn33" class="audio dio20" onclick="playpauseTrack('au33',btn33)" type="button" style="background-color:#8946A6;">Dreams</button>
+        <button id="btn34" class="audio dio20" onclick="playpauseTrack('au34',btn34)" type="button" style="background-color:#FF7F3F;">Dreams</button>
+        <button id="btn35" class="audio dio20" onclick="playpauseTrack('au35',btn35)" type="button" style="background-color:#ff6dbd;">Dreams</button>
+        <button id="btn36" class="audio dio20" onclick="playpauseTrack('au36',btn36)" type="button" style="background-color:#E900FF;">Dreams</button>
+        <button id="btn37" class="audio dio20" onclick="playpauseTrack('au37',btn37)" type="button" style="background-color:#FFC600;">Dreams</button>
+        <button id="btn38" class="audio dio20" onclick="playpauseTrack('au38',btn38)" type="button" style="background-color:#ce9696;">Dreams</button>
+        <button id="btn39" class="audio dio20" onclick="playpauseTrack('au39',btn39)" type="button" style="background-color:#7bffa7;">Dreams</button>
+        <button id="btn40" class="audio dio20" onclick="playpauseTrack('au40',btn40)" type="button" style="background-color:#358f65;">Dreams</button>
+</div>
+       
+          <div class="summer songList">
+              <h1>summer</h1>
+              <hr>
+        <button id="btn33" class="audio dio20" onclick="playpauseTrack('au33',btn33)" type="button" style="background-color:#8946A6;">Dreams</button>
+        <button id="btn34" class="audio dio20" onclick="playpauseTrack('au34',btn34)" type="button" style="background-color:#FF7F3F;">Dreams</button>
+        <button id="btn35" class="audio dio20" onclick="playpauseTrack('au35',btn35)" type="button" style="background-color:#ff6dbd;">Dreams</button>
+        <button id="btn36" class="audio dio20" onclick="playpauseTrack('au36',btn36)" type="button" style="background-color:#E900FF;">Dreams</button>
+        <button id="btn37" class="audio dio20" onclick="playpauseTrack('au37',btn37)" type="button" style="background-color:#FFC600;">Dreams</button>
+        <button id="btn38" class="audio dio20" onclick="playpauseTrack('au38',btn38)" type="button" style="background-color:#ce9696;">Dreams</button>
+        <button id="btn39" class="audio dio20" onclick="playpauseTrack('au39',btn39)" type="button" style="background-color:#7bffa7;">Dreams</button>
+        <button id="btn40" class="audio dio20" onclick="playpauseTrack('au40',btn40)" type="button" style="background-color:#358f65;">Dreams</button>
+</div>
+        <div id="pauseBtn">
+
+            <!-- <i class="fas fa-pause-circle fa-5x pauseAudIcon">
+                <input="pauseAudio" class="pauseAud" type="button" value="Stop Audio" />
+            </i> -->
 
         </div>
+
 
     </section>
+
+
+
 
     <div id="col-overlay">
         <div id="myNav" class="overlay">
@@ -127,7 +156,7 @@
                 <div class="bgColor">
 
                     <button class="colorBg1" onclick="changeBodyBg('#FFCCD2')"></button>
-                    <button class="colorBg2" onclick="changeBodyBg('#FFC900')"></button>
+                    <button class="colorBg2" onclick="changeBodyBg('#212121')"></button>
                     <button class="colorBg3" onclick="changeBodyBg('#EC255A')"></button>
                     <button class="colorBg4" onclick="changeBodyBg('#79018C')"></button>
                     <button class="colorBg5" onclick="changeBodyBg('#519259')"></button>
@@ -143,45 +172,106 @@
                 <p>PLAY &#9816;</p>
                 <a href="./scpaprok.html">
                     <p>RockPaperScissors</p>
-                   
+
                 </a>
-                <!-- <p>LOFI &#9834;</p> -->
-            
-               
-    <audio id="au2" class="au"><source src="./assets/softness.mp3" type="audio/mp3"></audio>
-    <audio id="au3" class="au"><source src="./assets/Runaways.mp3" type="audio/mp3"></audio>
-    <audio id="au4" class="au"><source src="./assets/Without You.mp3" type="audio/mp3"></audio>
-    <audio id="au5" class="au"><source src="./assets/saidTheSky.mp3" type="audio/mp3"></audio>
-    <audio id="au6" class="au"><source src="./assets/PLUM.mp3" type="audio/mp3"></audio>
-    <audio id="au7" class="au"><source src="./assets/And so it begin.mp3" type="audio/mp3"></audio>
-    <audio id="au8" class="au"><source src="./assets/Blue.mp3" type="audio/mp3"></audio>
-    <audio id="au9" class="au"><source src="./assets/allYourLove.mp3" type="audio/mp3"></audio>
-    <audio id="au10" class="au"><source src="./assets/ChillLofi1.mp3" type="audio/mp3"></audio>
-    <audio id="au11" class="au"><source src="./assets/dancing with my ghost.mp3" type="audio/mp3"></audio>
-    <audio id="au12" class="au"><source src="./assets/good all days.mp3" type="audio/mp3"></audio>
-    <audio id="au13" class="au"><source src="./assets/Happier.mp3" type="audio/mp3"></audio>
-    <audio id="au14" class="au"><source src="./assets/HueyDazeAmore.mp3" type="audio/mp3"></audio>
-    <audio id="au15" class="au"><source src="./assets/Invisible.mp3" type="audio/mp3"></audio>
-    <audio id="au16" class="au"><source src="./assets/Last Summer.mp3" type="audio/mp3"></audio>
-    <audio id="au17" class="au"><source src="./assets/love for a long time.mp3" type="audio/mp3"></audio>
-    <audio id="au18" class="au"><source src="./assets/Oceans Away .mp3" type="audio/mp3"></audio>
-    <audio id="au19" class="au"><source src="./assets/out loud.mp3" type="audio/mp3"></audio>
-    <!-- <audio id="au20" class="au"><source src="./assets/" type="audio/mp3"></audio> -->
+
+
+
+                <audio id="au1" class="au ">
+                    <source src="./assets/softness.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au2" class="au ">
+                    <source src="./assets/softness.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au3" class="au">
+                    <source src="./assets/Runaways.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au4" class="au">
+                    <source src="./assets/Without You.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au5" class="au">
+                    <source src="./assets/saidTheSky.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au6" class="au">
+                    <source src="./assets/PLUM.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au7" class="au">
+                    <source src="./assets/And so it begin.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au8" class="au">
+                    <source src="./assets/Blue.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au9" class="au">
+                    <source src="./assets/allYourLove.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au10" class="au">
+                    <source src="./assets/ChillLofi1.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au11" class="au">
+                    <source src="./assets/dancing with my ghost.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au12" class="au">
+                    <source src="./assets/good all days.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au13" class="au">
+                    <source src="./assets/Happier.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au14" class="au">
+                    <source src="./assets/HueyDazeAmore.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au15" class="au">
+                    <source src="./assets/Invisible.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au16" class="au">
+                    <source src="./assets/Last Summer.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au17" class="au">
+                    <source src="./assets/love for a long time.mp3" type="audio/mp3">
+                </audio>
+                <audio id="au18" class="au">
+                    <source src="./assets/Oceans Away .mp3" type="audio/mp3">
+                </audio>
+                <audio id="au19" class="au">
+                    <source id="au19" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au20" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au21" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au22" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au23" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au24" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au25" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au26" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au27" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au28" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au29" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au30" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au31" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au32" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au33" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au34" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au35" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au36" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au37" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au38" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au39" src="./assets/out loud.mp3" type="audio/mp3">
+                    <source id="au40" src="./assets/out loud.mp3" type="audio/mp3">
+                 
+                </audio>
+                <!-- <audio id="au20" class="au"><source src="./assets/" type="audio/mp3"></audio> -->
 
 
 
                 <div class="container-au">
                     <hr>
-                <p>ColorDice</p>
+                    <p>ColorDice</p>
                 </div>
             </div>
 
 
         </div>
-        </div>
-        <div class="openNav">
-            <div class="nav-open " cursor:pointer" onclick="openNav()">Secret Zone</div>
-        </div>
+    </div>
+    <div class="openNav">
+        <div class="nav-open " cursor:pointer" onclick="openNav()">Secret Zone</div>
+    </div>
 
         <footer>
             <p class="creator">MADE WITH 🖤 BY OM</p>
