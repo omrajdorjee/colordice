@@ -1,4 +1,7 @@
-
+document.getElementById('stopButton').onclick = function () {
+    var sounds = document.getElementsByTagName('audio');
+    for (i = 0; i < sounds.length; i++) sounds[i].pause();
+};
 var audioArr = document.querySelectorAll("audio");
 
 function playpauseTrack(audio) {
