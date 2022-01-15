@@ -266,12 +266,7 @@ body {
 
 
 
-  .audio:hover {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 7px 10px;
-    border: solid 0.5px #000000;
-  }
+ 
   #sectionOne {
     height: 80vh;
     overflow-y: scroll;
@@ -412,5 +407,11 @@ body {
     min-width: 22%;
     height: 33px;
     font-family: "Yomogi", cursive;
+  }
+   .audio:hover {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 7px 10px;
+    border: solid 0.5px #000000;
   }
 }
