@@ -21,6 +21,7 @@ function playpauseTrack(audio) {
 
 }
 
+const pauseBtn = document.querySelector(".pauseAudIcon")
 const background = document.querySelector("#title");
 
 const getRandomNumber = (limit) => {
@@ -36,7 +37,7 @@ const getRandomColor = () => {
 const setBackgroundColor = () => {
     const randomColor = getRandomColor();
     background.style.color = randomColor;
-    background.style.color = randomColor;
+   pauseBtn.style.color = randomColor;
 };
 
 setBackgroundColor();
