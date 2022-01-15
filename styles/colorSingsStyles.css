@@ -411,4 +411,11 @@ body {
     padding: 7px 10px;
     border: solid 0.5px #000000 !important;
   }
+  .chill_list{
+    width: 87%;
+    color:#ffffff !important;
+    height: 50px;
+    border-radius: 10px !important;
+    padding: 15px;
+  }
 }
