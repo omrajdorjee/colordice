@@ -2,7 +2,8 @@ document.getElementById('stopButton').onclick = function () {
     var sounds = document.getElementsByTagName('audio');
     for (i = 0; i < sounds.length; i++) sounds[i].pause();
 };
-var audioArr = document.querySelectorAll("audio");
+
+var audioArr = document.querySelectorAll(".au");
 
 function playpauseTrack(audio) {
     var curr_track = document.getElementById(audio);
@@ -29,7 +30,7 @@ const getRandomNumber = (limit) => {
 const getRandomColor = () => {
     const h = getRandomNumber(360);
 
-    return `hsl(${h}deg, 60%, 40%)`;
+    return `hsl(${h}deg, 90%, 40%)`;
 };
 
 const setBackgroundColor = () => {
