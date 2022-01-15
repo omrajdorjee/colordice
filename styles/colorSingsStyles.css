@@ -498,7 +498,7 @@ body {
     overflow: hidden;
     z-index: -5;
 }
-
+/* 
 .background span {
     width: 3vmin;
     height: 3vmin;
@@ -961,6 +961,6 @@ body {
     animation-delay: -340s;
     transform-origin: -3vw -14vh;
     box-shadow: -6vmin 0 1.3238503437695792vmin currentColor;
-}
+} */
 
 }
