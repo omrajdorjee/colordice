@@ -1,10 +1,10 @@
 body {
-  background-color: #ffffff;
-
-  /* Smoothly transition the background color */
+  background: #ffffff;
+  /* background: -webkit-linear-gradient(top left, #5eb6b9, #2ae292);
+  background: -moz-linear-gradient(top left, #5eb6b9, #2ae292);
+  background: linear-gradient(to bottom right, #fafcf4, #ffffff, #e6e6e6); */
   transition: background-color 0.5s;
 }
-
 
 @media screen and (max-width: 600px) {
   #player-name p {
@@ -13,11 +13,10 @@ body {
     position: absolute;
     font-family: "Roboto Mono", monospace;
   }
-  h1{
-    font-size:12px;
-    font-family: 'Cairo', sans-serif;
-   margin:0;
-
+  h1 {
+    font-size: 12px;
+    font-family: "Cairo", sans-serif;
+    margin: 0;
   }
   hr {
     border: 2px solid #8b8b8b6b;
@@ -37,19 +36,15 @@ body {
   }
 
   #title {
+    color: rgb(87, 87, 87);
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 0 0 0 10px;
     margin: 2px 0 10px;
     position: relative;
-    text-shadow: 1px -1px 1px black;
-  /* font-family: 'Ranchers', cursive; */
-  /* font-family: 'Cairo', sans-serif; */
-/* font-family: 'Finger Paint', cursive; */
-/* font-family: 'Licorice', cursive; */
-font-family: 'Mansalva', cursive;
-/* font-family: 'Maven Pro', sans-serif; */
-    text-align: left;
+    /* text-shadow: 1px -1px 1px black; */
+    font-family: "Flavors", cursive;
+    text-align: center;
     width: 100%;
     transition: all 3s;
   }
@@ -57,25 +52,6 @@ font-family: 'Mansalva', cursive;
   /* =========== =================================================================*/
   /* ==== AUDIO PIlls =================================*/
   /* ================================================================= */
-
-  .audio {
-    background-color: #f05454;
-    /* border-radius: 0px; */
-    color: #000000;
-    text-align: center;
-    padding: 7px 10px;
-    margin: 5px;
-    min-width: 21%;
-    height: 40px;
-    border: solid 0.5px rgb(0, 0, 0);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 15px;
-    font-size: 15px;
-font-family: 'Mansalva', cursive;
-    /* display: block;   */
-  }
 
   .dio1 {
     background-color: #fa00d4;
@@ -259,19 +235,10 @@ font-family: 'Mansalva', cursive;
     /* margin: auto; */
   }
 
-  .audio:hover {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 7px 10px;
-    border: solid 1px #000000;
-  }
-
   .toggle {
     visibility: hidden;
-    /* background-color:#fff; */
   }
   .toggleMid {
-    /* background-color: #fff; */
     visibility: visible;
   }
 
@@ -296,69 +263,66 @@ font-family: 'Mansalva', cursive;
   .footer-link:hover {
     color: #00eaff;
   }
-.fas {
-  border-radius: 50%;
 
-  background-color: rgb(255, 255, 255);
-}
-  #sectionOne {
+
+
+  .audio:hover {
     background-color: #ffffff;
+    color: #000000;
+    padding: 7px 10px;
+    border: solid 0.5px #000000;
+  }
+  #sectionOne {
     height: 80vh;
-    /* border: solid 1px rgb(3, 3, 3);
-    border-radius: 10px; */
     overflow-y: scroll;
     text-align: center;
   }
- 
+
+  .songList {
+    width: 90%;
+    margin: 10px auto 2px;
+    padding: 2%;
+    /* background-color: #ffffff; */
+    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px -4px 6px -2px rgba(0, 0, 0, 0.82);
+  }
+  .chillVibe {
+    overflow: scroll;
+    background: #ffffff13;
+    height: 30%;
+    border-radius: 20px;
+  }
+  .popSong {
+    background-color: #ffffff2a;
+    overflow: scroll;
+    height: 60%;
+    border-radius: 20px;
+  }
+  .summer {
+    background-color: #ffffff2a;
+    overflow: scroll;
+    height: 30%;
+    border-radius: 20px;
+  }
+  .mood {
+    background-color: #ffffff2a;
+    height: 30%;
+    overflow: scroll;
+    border-radius: 20px;
+    color: rgb(34, 34, 34);
+  }
   #pauseBtn {
-  position: fixed;
-  bottom: 25%;
-  left: 55%;
-  width: 50px;
-  height: 50px;
-  color: #fb133a;
-  /* background-color: rgba(0, 0, 0, 0.548); */
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.songList{
-  margin-top: 4%;
-  padding:2%;
-   background-color:#cecece;
-}
-.chillVibe {
-  overflow: scroll;
-  width: 95%;
-  height: 30%;
-  border-radius: 20px;
-}
-.popSong {
-    background-color:#c1d7db;
-   overflow: scroll;
-  width: 95%;
-  height: 50%;
-  border-radius: 20px;
-}
-.summer {
-    background-color:#c4d6d5;
-   overflow: scroll;
-  width: 95%;
-  height: 30%;
-  border-radius: 20px;
-}
-.mood {
-  background-color:#ffc6ff;
- width: 95%;
-  height: 30%;
-  width: 95%;
-  border-radius: 20px;
-}
-  .pauseAudIcon{
-    /* position: absolute;
-    bottom: 30%; */
+    position: fixed;
+    bottom: 20%;
+    left: 60%;
+    width: 40px;
+    height: 40px;
+  }
+  .pauseAudIcon {
     margin: 60px;
-   
-    color: rgb(29, 29, 29);
+    color: rgb(255, 251, 0);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
   }
 
   #col-overlay {
@@ -423,22 +387,30 @@ font-family: 'Mansalva', cursive;
     z-index: 1;
   }
   .nav-open {
-    margin: 0px auto;
+    margin: 10px auto 30px;
     width: 40%;
-    height: 14px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    height: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #00ff00;
-    color: #000000;
+    background-color: #202020;
+    color: #ffffff;
     z-index: 1;
     padding: 0px 0 3px;
     font-family: monospace;
     font-size: 12px;
-    border-bottom: solid 3px #acacac;
+    border-bottom: solid 1px #acacac;
   }
-
-
+    .audio {
+    border-radius: 20px;
+    color: #000000 !important;
+    border: none !important;
+    text-align: center;
+    padding: 7px 10px;
+    margin: 5px;
+    min-width: 22%;
+    height: 33px;
+    font-family: "Yomogi", cursive;
+  }
 }
-
