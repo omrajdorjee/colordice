@@ -416,8 +416,8 @@ body {
     border: solid 0.5px #000000 !important;
   }
   .chill_list{
-    width: 70px;
-    height: 70px;
+    /* width: ; */
+    height: 80px !important;
     /* color:#ffffff !important; */
     border-radius: 50% !important;
     margin: 3%;
@@ -429,7 +429,7 @@ body {
    border: solid 0.5px #ffffff !important;
   }
   .list-one{
-    background: url("./images/chill-one-bg.jpg");
+    background: url("https://images.pexels.com/photos/10380835/pexels-photo-10380835.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-size: cover;
   }
   .list-two{
