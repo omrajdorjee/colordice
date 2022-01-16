@@ -314,7 +314,7 @@ body {
   }
   #pauseBtn {
     position: fixed;
-    bottom: 20%;
+    bottom: 30%;
     left: 60%;
     width: 1px;
     height: 1px;
@@ -322,9 +322,10 @@ body {
   .pauseAudIcon {
     margin: 60px;
     border-radius: 50%;
-    background-color: rgba(151, 151, 151, 0.445);
+    background-color: rgb(255, 255, 255);
     transition: all 2s;
   }
+
 
   #col-overlay {
     visibility: visible;
