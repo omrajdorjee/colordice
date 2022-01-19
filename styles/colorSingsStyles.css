@@ -195,17 +195,18 @@
   /* #myNav {
     text-align: center;
   } */
-  .overlay {
+   .overlay {
     height: 0%;
-    width: 99%;
+    width: 100%;
     position: absolute;
     z-index: 1;
-    top: 1%;
+    top: 0%;
+    left: 0%;
     margin: auto;
     background-color: #0000006e;
     overflow-y: hidden;
     transition: 0.2s;
-    border-radius: 10px;
+    /* border-radius: 10px; */
   }
 
   .overlay-content {
