@@ -481,6 +481,7 @@
   }
 
   #title {
+    margin:10px;
     display: inline-block;
     font-size: 2rem;
     position: relative;
@@ -549,7 +550,7 @@
   }
 
   .songList {
-    width: 98%;
+    width: 95.5%;
     margin: 10px auto 2px;
     padding: 2%;
     text-align: center;
@@ -557,14 +558,15 @@
   .chillVibe {
     /* overflow: scroll; */
     background: #ffffff13;
-    width: 95%;
+    width: 100%;
     border-radius: 20px;
   }
   .chillV_top {
-    width: 380px;
+    width: 95%!important;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    Z-index: 3;
   }
   .popSong {
     margin-top: 10%;
