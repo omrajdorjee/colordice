@@ -643,12 +643,13 @@
   #myNav {
     text-align: center;
   }
-  .overlay {
+   .overlay {
+    max-height: 80vh;
     height: 0%;
     width: 95.5%;
     position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 9%;
     margin: auto;
     background-color: #0000008a;
     overflow-y: hidden;
@@ -658,6 +659,7 @@
 
   .overlay-content {
     width: 90%;
+    height: 80%;
     margin: auto;
     text-align: center;
     font-family: monospace;
@@ -685,7 +687,7 @@
     position: relative;
     box-shadow: none;
     outline: none;
-    top: 60%;
+    top: 90%;
     font-size: 2.6rem;
     color: #ffffff;
     z-index: 1;
