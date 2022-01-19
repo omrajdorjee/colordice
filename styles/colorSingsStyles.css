@@ -31,7 +31,9 @@
     margin: 0px;
     padding: 20px;
   }
-
+.arow{
+   visibility: hidden
+  }
   #title {
     background-color: rgb(255, 255, 255);
     display: inline-block;
@@ -532,15 +534,23 @@
     border-style: none;
     
   }
-  .header {
+ .header {
     width: 95%;
-    height: 80px;
+    height: 4rem;
     margin: 0 auto;
+  }
+  .arow{
+    position: absolute;
+    top: 8%;
+    right: 2.4%;
+    font-size:1.4rem;
+    color: rgb(49, 49, 49);
   }
   #sectionOne {
     width: 98%;
     height: 60px;
     text-align: center;
+    margin: auto;
   }
   #sectionTwo {
     width: 98%;
@@ -557,12 +567,12 @@
   }
   .chillVibe {
     /* overflow: scroll; */
-    background: #ffffff13;
-    width: 100%;
+    background: #63636313;
+    width: 100% !important;
     border-radius: 20px;
   }
   .chillV_top {
-    width: 95%!important;
+    width: 99%!important;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -759,7 +769,9 @@
     position: absolute;
     left: 93%!important;
     top: 0.5%;
-   
-  
+
+  }
+  .arow{
+   visibility: hidden
   }
 }
