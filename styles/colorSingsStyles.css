@@ -1,6 +1,6 @@
 @media screen and (min-width: 600px) {
   body {
-    background: #b4b4b4;
+    background: #d6d6d6;
   }
 
   .arow {
@@ -702,8 +702,8 @@
     text-decoration: none;
   }
   .nav-open {
-    position: absolute;
-    left: 90%;
+   position: absolute;
+    left: 87%;
     top: 1%;
     margin: 10px auto 30px;
     width: 35px;
@@ -712,7 +712,7 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #c2c2c2;
+    background-color: #c2c2c221;
     color: #ffffff;
     z-index: 1;
     padding: 0px 0 3px;
