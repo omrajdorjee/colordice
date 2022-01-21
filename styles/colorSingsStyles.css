@@ -557,9 +557,9 @@ iframe{
   .arow {
     position: absolute;
     top: 8%;
-    right: 2.4%;
+    right: 4%;
     font-size: 1.4rem;
-    color: rgb(49, 49, 49);
+    color: #F7F7F7;
   }
   #sectionOne {
     width: 98%;
