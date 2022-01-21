@@ -159,7 +159,7 @@ iframe{
     overflow: scroll;
   }
     .video-section{
-     background-color: #c8eb95;
+     background-color: #fff8f3;
     height: 60%;
     overflow: scroll;
     border-radius: 20px;
@@ -620,7 +620,7 @@ iframe{
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
   }
     .video-section{
-     background-color: #c8eb95;
+     background-color: #fff8f3;
     height: 35%;
     overflow: scroll;
     border-radius: 20px;
@@ -812,6 +812,8 @@ iframe{
   .arow {
     visibility: hidden;
   }
+  .video-section{
+    height:60%;
 }
 
  
