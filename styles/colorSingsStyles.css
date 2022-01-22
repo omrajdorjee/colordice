@@ -388,7 +388,7 @@ iframe{
 .colorBg2 {
   display: inline-block;
   border: none;
-  background-color: #000000;
+  background-color: #d6d6d6;
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -470,7 +470,7 @@ iframe{
 
 @media screen and (max-width: 600px) {
   body {
-    background: #d6d6d6;
+    background: #ffffff;
     /* background: -webkit-linear-gradient(top left, #58d0ea, #73d9e5);
     background: -moz-linear-gradient(top left, #58d0ea, #73d9e5);
     background: linear-gradient(to bottom right, #ffeff9, #e3fcff); */
@@ -791,7 +791,7 @@ iframe{
   }
   iframe{
   border-radius: 10px;
-  width: 21rem;
+  width: 99%;
   height: 11rem;
   margin-bottom: 5rem;
   border:none;
