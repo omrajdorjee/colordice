@@ -4,8 +4,6 @@ var imageTracker = 'playImage';
 document.getElementById("swapImage").onclick = function() {
 	swapImage('song');
 	playPause('song');
-
-  
 };
 document.getElementById("autoPlay-2").onclick = function() {
 		swapImage('songPl3');
@@ -42,7 +40,7 @@ function Buttontoggle()
   if (imageTracker == 'playImage') {
   $("button").addClass("pills");
     $(".tempo").addClass("conseal"); 
- document.body.style.backgroundColor = '#94DAFF';
+ document.body.style.backgroundColor = '#77D970';
   } else {
     imageTracker = 'playImage';
   }
@@ -93,6 +91,7 @@ var playPause = function(playList) {
   if (playplay == 'song' && musicTracker == 'noMusic') {
   	audios[activeTrack].play();
     musicTracker = 'playMusic';
+    
     
   } 
   else if(playplay == 'songPl2' && musicTracker == 'noMusic'){
@@ -177,8 +176,13 @@ var showPlaying = function()
 
 
 
-document.getElementById('stopBtn').onclick = function () {
+document.getElementById('stopBtn').onclick = function stopAllAudio() {
     var sounds = document.getElementsByTagName('audio');
+    $("button").removeClass("pills");
+    $(".tempo").removeClass("conseal"); 
+    playPause('song');
+    playPause('songPl2');
+    playPause('songPl3');
     for (i = 0; i < sounds.length; i++) sounds[i].pause();
 };
 
@@ -186,7 +190,7 @@ document.getElementById('stopBtn').onclick = function () {
 
 
 var audioArr = document.querySelectorAll(".au");
-function playpauseTrack(audio,) {
+function playpauseTrack(audio) {
     var curr_track = document.getElementById(audio);
     curr_track.play();
 
@@ -235,5 +239,3 @@ setBackgroundColor();
 setInterval(() => {
     setBackgroundColor();
 }, 1500);
-
-
