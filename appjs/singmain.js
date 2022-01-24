@@ -40,7 +40,7 @@ function Buttontoggle()
  var swapImage = function() {
   var image = document.getElementById('swapImage');
   if (imageTracker == 'playImage') {
-  $("button").addClass("pills");
+//   $("button").addClass("pills");
     $(".tempo").addClass("conseal"); 
  document.body.style.backgroundColor = '#94DAFF';
   } else {
