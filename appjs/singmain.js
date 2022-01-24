@@ -42,7 +42,7 @@ function Buttontoggle()
   if (imageTracker == 'playImage') {
   $("button").addClass("pills");
     $(".tempo").addClass("conseal"); 
- document.body.style.backgroundColor = '#8E806A';
+ document.body.style.backgroundColor = '#94DAFF';
   } else {
     imageTracker = 'playImage';
   }
@@ -235,4 +235,5 @@ setBackgroundColor();
 setInterval(() => {
     setBackgroundColor();
 }, 1500);
+
 
