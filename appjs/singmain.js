@@ -1,3 +1,25 @@
+function stopAllAudio() {
+  if (playplay == 'song') {
+  document.getElementById("swapImage").click(); 
+}
+else if (playplay == 'songPl2') {
+  document.getElementById("autoPlay-3").click(); 
+}
+else if (playplay == 'songPl3'){
+  document.getElementById("autoPlay-2").click(); 
+}
+    var sounds = document.getElementsByTagName('audio');
+    for (i = 0; i < sounds.length; i++) sounds[i].pause();
+    $("button").removeClass("pills");
+    $(".tempo").removeClass("conseal"); 
+    $('.asw-2, .asw-3').removeClass("tglHide");
+    document.body.style.backgroundColor = '#D3DEDC';
+    playPause('else');
+
+
+};
+
+
 // ===============
 var imageTracker = 'playImage';
 //set events handlers for on click
@@ -34,7 +56,6 @@ function Buttontoggle()
    var element = document.getElementById("video-section");
    element.classList.toggle("video-section-tgl");
    
-  
   }
   
 
@@ -58,6 +79,7 @@ var musicTracker = 'noMusic';
   var audios = [];
   var playList2 =[];
   var playList3 =[];
+
  $('.song').each(function(){
  		var load = new  Audio($(this).attr("src"));
     load.load();
@@ -94,9 +116,7 @@ var playPause = function(playList) {
     playplay = playList;    
   if (playplay == 'song' && musicTracker == 'noMusic') {
   	audios[activeTrack].play();
-    musicTracker = 'playMusic';
-    
-    
+    musicTracker = 'playMusic';  
     $('.asw-2, .asw-3').addClass("tglHide");
     return playplay
   } 
@@ -112,17 +132,15 @@ var playPause = function(playList) {
     musicTracker = 'playMusic';
     playplay = 'songPl3';
     $('.asw-2, .asw-1').addClass("tglHide");
-  }
-  
+  } 
   else {
     $(".tempo").removeClass("conseal"); 
      audios[activeTrack].pause();
     playList2[activeTrack].pause();
     playList3[activeTrack].pause();
-    
-      document.body.style.backgroundColor = '#D3DEDC';
-      $('.asw-2, .asw-3, .asw-1').removeClass("tglHide");
-       $("button").removeClass("pills");
+   document.body.style.backgroundColor = '#D3DEDC';
+   $('.asw-2, .asw-3, .asw-1').removeClass("tglHide");
+   $("button").removeClass("pills");
     musicTracker = 'noMusic';
   }
   showPlaying();
@@ -221,30 +239,6 @@ var showPlaying = function()
 };
 
 
-function stopAllAudio() {
-  if (playplay == 'song') {
-  document.getElementById("swapImage").click(); 
-}
-else if (playplay == 'songPl2') {
-  document.getElementById("autoPlay-3").click(); 
-}
-else if (playplay == 'songPl3'){
-  document.getElementById("autoPlay-2").click(); 
-}
-    var sounds = document.getElementsByTagName('audio');
-    for (i = 0; i < sounds.length; i++) sounds[i].pause();
-    $("button").removeClass("pills");
-    $(".tempo").removeClass("conseal"); 
-    $('.asw-2, .asw-3').removeClass("tglHide");
-    document.body.style.backgroundColor = '#D3DEDC';
-    playPause('else');
-
-
-};
-
-
-
-
 var audioArr = document.querySelectorAll(".au");
 function playpauseTrack(audio) {
     var curr_track = document.getElementById(audio);
@@ -254,8 +248,7 @@ function playpauseTrack(audio) {
     var buttonArr = document.querySelectorAll(".audio").length;
     for (var i = 0; i < buttonArr; i++) {
         document.querySelectorAll(".audio")[i].addEventListener("click", function () {
-            curr_track.pause();
-           
+            curr_track.pause();          
           
         },100)
     }
@@ -265,13 +258,6 @@ function playpauseTrack(audio) {
 
 
 // ===============
-
-
-
-
-
-
-const quote = document.querySelector (".pauseAudIcon")
 const background = document.querySelector("#title");
 
 const getRandomNumber = (limit) => {
@@ -287,7 +273,6 @@ const getRandomColor = () => {
 const setBackgroundColor = () => {
     const randomColor = getRandomColor();
     background.style.color = randomColor;
-    $('.label').style.color = randomColor;
 };
 
 setBackgroundColor();
