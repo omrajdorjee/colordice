@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="./styles/colorSingsStyles.css">
  
 
-<link rel="icon" href="./images/favicon.ico" <!--========GOOGLE FONTS==========--> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bebas+Neue&family=Cairo:wght@300;400&family=Dangrek&family=Finger+Paint&family=Flavors&family=Indie+Flower&family=Pacifico&family=Plaster&family=Righteous&family=Roboto+Mono:wght@300&family=Yomogi&display=swap" rel="stylesheet"> <!-- Load FontAwesome icons --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> <!-- ============ end ============ --> </head> 
+<link rel="icon" href="./images/faviconcoloropills.ico">
+      
+      <!--========GOOGLE FONTS==========-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barriecito&family=Bebas+Neue&family=Cairo:wght@300;400&family=Comforter+Brush&family=Dangrek&family=Finger+Paint&family=Flavors&family=Indie+Flower&family=Mochiy+Pop+P+One&family=Pacifico&family=Plaster&family=Righteous&family=Roboto+Mono:wght@300&family=Ubuntu:wght@500&family=Yomogi&display=swap" rel="stylesheet">
+    
+    <!-- Load FontAwesome icons --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> <!-- ============ end ============ --> </head> 
 
 <body>
      
@@ -108,78 +115,154 @@
 
         </div>
       
-
-        <div class="popSong songList">
+<div class="popSong songList">
             
-        <input class="stopButton" type="checkbox" id="toggle_checkbox">
-        <label class='autoSwitch' id="swapImage" for="toggle_checkbox" >Auto Play</label>
+        <input onclick="clicked()" class="stopButton" type="checkbox" id="toggle_checkbox">
+        <label class='autoSwitch asw-1' id="swapImage" for="toggle_checkbox" >Auto Play</label>
             <hr>
 
-            <button class="audio" onclick="playpauseTrack('au67','btn3')" type="button" style="background-color:#B5EAEA;">Make It to Me</button>
-            
-            <button class="audio" onclick="playpauseTrack('au1m','btn3')" type="button" style="background-color:#B5EAEA;">Bubbly</button>
-            <button class="audio" onclick="playpauseTrack('au2m','btn3')" type="button" style="background-color:#B5EAEA;">Galdive Lotus</button>
-            <button class="audio" onclick="playpauseTrack('au3m','btn3')" type="button" style="background-color:#B5EAEA;">Indigo Bubble Tea</button>
-            <button class="audio" onclick="playpauseTrack('au4m','btn3')" type="button" style="background-color:#B5EAEA;">This Time</button>
-            <button class="audio" onclick="playpauseTrack('au5m','btn3')" type="button" style="background-color:#B5EAEA;">Real Thing</button>
+            <audio id="au1m" class="au">
+                <source class="song" src="./assets/Bubbly.mp3" type="audio/mp3">
+            </audio>
+            <audio id="au2m" class="au">
+                <source class="song" src="./assets/Galdive Lotus.mp3" type="audio/mp3">
+            </audio>
+            <audio id="au3m" class="au">
+                <source class="song" src="./assets/Indigo Bubble Tea.mp3" type="audio/mp3">
+            </audio>
+            <audio id="au4m" class="au">
+                <source class="song" src="./assets/this time.mp3" type="audio/mp3">
+            </audio>
+            <audio id="au5m" class="au">
+                <source class="song" src="./assets/Real Thing.mp3" type="audio/mp3">
+            </audio>
+            <button class="audio" onclick="playpauseTrack('au1m','btn3')" type="button"
+                style="background-color:#B5EAEA;">Bubbly</button>
+            <button class="audio" onclick="playpauseTrack('au2m','btn3')" type="button" style="background-color:#B5EAEA;">Galdive
+                Lotus</button>
+            <button class="audio" onclick="playpauseTrack('au3m','btn3')" type="button" style="background-color:#B5EAEA;">Indigo
+                Bubble Tea</button>
+            <button class="audio" onclick="playpauseTrack('au4m','btn3')" type="button" style="background-color:#B5EAEA;">This
+                Time</button>
+            <button class="audio" onclick="playpauseTrack('au5m','btn3')" type="button" style="background-color:#B5EAEA;">Real
+                Thing</button>
+                
+<audio id="au67"><source class="au song" src="./assets/make it to me.mp3" type="audio/mp3"></audio>
+<button class="audio" onclick="playpauseTrack('au67','btn3')" type="button" style="background-color:#B5EAEA;">Make It to Me</button>
+<audio id="au65">
+    <source class="au song" src="./assets/Need Somebody.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au65','btn3')" type="button"
                 style="background-color:#B5EAEA;">Need Somebody</button>
-
+<audio id="au63">
+    <source class="au song" src="./assets/Superficial Love.mp3" type="audio/mp3">
+</audio>
             <button id="btn3" class="audio" onclick="playpauseTrack('au63','btn3')" type="button"
                 style="background-color:#B5EAEA;">Superficial
                 love</button>
+<audio id="au56">
+    <source class="au song" src="./assets/hi lo.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au56')" type="button" style="background-color:#A3E4DB;">Hi
                 Lo</button>
+<audio id="au57">
+    <source class="au song" src="./assets/falling.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au57')" type="button"
                 style="background-color:#FFE162;">Falling</button>
+<audio id="au204" class="au">
+    <source class="song"
+        src="./assets/korean/Lucky《幸運》-Jason Mraz feat. Colbie Caillat【中文歌詞版】90_00_s情歌(MP3_128K).mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au204')" type="button"
                 style="background-color:#EDD2F3;">Lucky</button>
-
+<audio id="au58">
+    <source class="au song" src="./assets/dear try.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au58')" type="button" style="background-color:#C8E3D4;">Dear
                 Try</button>
+<audio id="au61">
+    <source class="au song" src="./assets/sunflower.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au61')" type="button"
                 style="background-color:#91C483;">Sunflower</button>
+<audio id="au62">
+    <source class="au song" src="./assets/keepingScore.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au62')" type="button"
                 style="background-color:#EEEEEE;">Keeping
                 Score</button>
+<audio id="au59">
+        <source class="au song" src="./assets/what about.mp3" type="audio/mp3">
+     </audio>
             <button class="audio" onclick="playpauseTrack('au59')" type="button" style="background-color:#F6D7A7;">What
                 About</button>
+<audio id="au47">
+    <source class="au" src="./assets/out loud.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au47')" type="button" style="background-color:#d0abd6;">Out
                 Loud</button>
-
+<audio id="au52">
+    <source class="au song" src="./assets/StillKids.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au52')" type="button" style="background-color:#E7FBBE;">Still
                 kids</button>
-            
+<audio id="au54">
+    <source class="au songPl3" src="./assets/saidTheSky.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au54')" type="button" style="background-color:#b5ffc1;">Said
                 the Sky</button>
+<audio id="au3" class="au">
+    <source class="song" src="./assets/Runaways.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au3','btn3')" type="button"
                 style="background-color:#FFD523;">Runaways</button>
-            <!-- <button class="audio" onclick="playpauseTrack('au4','btn4')" type="button style="background-color:#fff;" >Without You</button> -->
-           
-            <button class="audio dio9" onclick="playpauseTrack('au9','btn9')" type="button"
-                style="background-color:#FFD523;">All Your
-                Love</button>
-
+<audio id="au11" class="au">
+    <source class="song" src="./assets/dancing with my ghost.mp3" type="audio/mp3">
+</audio>
             <button class="audio dio11" onclick="playpauseTrack('au11','btn11')" type="button"
                 style="background-color:#FFCBCB;">Dancing</button>
+<audio id="au32">
+    <source class="au song" src="./assets/goodThingsFallApart.mp3" type="audio/mp3">
+</audio>
             <button class="audio dio12" onclick="playpauseTrack('au12','btn12')" type="button"
                 style="background-color:#FFCBCB;">Good old
                 Days</button>
+<audio id="au13" class="au">
+    <source class="song" src="./assets/Happier.mp3" type="audio/mp3">
+</audio>
             <button class="audio dio13" onclick="playpauseTrack('au13','btn13')" type="button"
                 style="background-color:#FFCBCB;">Happier</button>
+                <audio id="au36">
+                    <source class="au song" src="./assets/lie.mp3" type="audio/mp3">
+                </audio>
             <button class="audio" onclick="playpauseTrack('au36')" type="button"
                 style="background-color: #FFE194;">Lie</button>
+<audio id="au15" class="au">
+    <source src="./assets/Invisible.mp3" type="audio/mp3">
+</audio>
             <button class="audio dio15" onclick= "playpauseTrack('au15','btn15')" type="button"
                 style="background-color: #FFE194;">Invisible</button>
+<audio id="au16" class="au">
+    <source src="./assets/Last Summer.mp3" type="audio/mp3">
+</audio>
             <button class="audio dio16" onclick="playpauseTrack('au16','btn16')" type="button"
                 style="background-color: #FFE194;">Last
                 Summer</button>
+<audio id="au17" class="au">
+    <source class="song" src="./assets/love for a long time.mp3" type="audio/mp3">
+</audio>
             <button class="audio dio17" onclick="playpauseTrack('au17','btn17')" type="button"
                 style="background-color: #F9F3DF;">For long
                 Time</button>
+                <audio id="au18" class="au">
+                    <source class="song" src="./assets/Oceans Away .mp3" type="audio/mp3">
+                </audio>
             <button class="audio dio18" onclick="playpauseTrack('au18','btn18')" type="button"
                 style="background-color: #F9F3DF;">Ocean</button>
-
+<audio id="au19">
+    <source class="au song" src="./assets/10000 hours.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au19')" type="button"
                 style="background-color: #F9F3DF;">10000 Hours</button>
            
@@ -193,7 +276,8 @@
                 style="background-color: #F9F3DF;">Crash</button>
             <button class="audio" onclick="playpauseTrack('au27')" type="button" style="background-color: #F9F3DF;">Die
                 Happy</button>
-            
+            <button class="audio" onclick="playpauseTrack('au28')" type="button" style="background-color: #EEEEEE;">Five
+                Fingers</button>
             <button class="audio" onclick="playpauseTrack('au29')" type="button" style="background-color: #EEEEEE;">From
                 Nowhere</button>
            
@@ -202,10 +286,14 @@
             <button class="audio" onclick="playpauseTrack('au32')" type="button" style="background-color: #FFF338;">Fall
                 Apart</button>
            
-        
+<audio id="au35">
+    <source class="au song" src="./assets/heartless.mp3" type="audio/mp3">
+</audio>
             <button class="audio" onclick="playpauseTrack('au35')" type="button"
                 style="background-color: #A2D2FF;">Heartless</button>
-
+<audio id="au66">
+    <source class="au song" src="./assets/like i can.mp3" type="audio/mp3">
+</audio>
             <button id="btn3" class="audio" onclick="playpauseTrack('au66','btn3')" type="button"
                 style="background-color: #A2D2FF;">like i can</button>
             
@@ -216,8 +304,8 @@
         <br>
        
         <div class="summer songList">
-    <input class="" type="checkbox" id="toggle_checkbox3">
-    <label class='autoSwitch' id="autoPlay-3" for="toggle_checkbox3">Auto Play</label>
+    <input  type="checkbox" id="toggle_checkbox3">
+    <label class='autoSwitch asw-2' id="autoPlay-3" for="toggle_checkbox3">Auto Play</label>
             <hr>
 
             <button class="audio" onclick="playpauseTrack('au200')" type="button"
@@ -297,14 +385,11 @@
 
         <div class="mood songList">
                 <input class="" type="checkbox" id="toggle_checkbox2">
-                <label class='autoSwitch' id="autoPlay-2" for="toggle_checkbox2">Auto Play</label>
+                <label class='autoSwitch asw-3' id="autoPlay-2" for="toggle_checkbox2">Auto Play</label>
             <hr>
             <button class="audio" onclick="playpauseTrack('au55')" type="button" style="background-color:#80ED99;">Time
                 AFter Time</button>
-            <button class="audio" onclick="playpauseTrack('au60')" type="button" style="background-color:#80ED99;">Talk
-                Meme</button>
-            <button class="audio" onclick="playpauseTrack('au48')" type="button" style="background-color:#80ED99;">With
-                You</button>
+        
             <button class="audio" onclick="playpauseTrack('au49')" type="button"
                 style="background-color:#80ED99;">Sorry</button>
             <button class="audio" onclick="playpauseTrack('au50')" type="button"
@@ -392,9 +477,7 @@
 <audio id="au2" class="au ">
     <source src="./assets/spring-chill.mp3" type="audio/mp3">
 </audio>
-<audio id="au3" class="au">
-    <source class="song" src="./assets/Runaways.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au4" class="au">
     <source class="song" src="./assets/Without You.mp3" type="audio/mp3">
 </audio>
@@ -410,41 +493,24 @@
 <audio id="au8" class="au">
     <source src="./assets/Blue.mp3" type="audio/mp3">
 </audio>
-<audio id="au9" class="au">
-    <source src="./assets/allYourLove.mp3" type="audio/mp3">
-</audio>
 <audio id="au10" class="au">
     <source src="./assets/rainy-day-chill.mp3" type="audio/mp3">
 </audio>
-<audio id="au11" class="au">
-    <source class="song" src="./assets/dancing with my ghost.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au12" class="au">
     <source class="songPl3" src="./assets/good all days.mp3" type="audio/mp3">
 </audio>
-<audio id="au13" class="au">
-    <source src="./assets/Happier.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au14" class="au">
     <source src="./assets/HueyDazeAmore.mp3" type="audio/mp3">
 </audio>
-<audio id="au15" class="au">
-    <source src="./assets/Invisible.mp3" type="audio/mp3">
-</audio>
-<audio id="au16" class="au">
-    <source src="./assets/Last Summer.mp3" type="audio/mp3">
-</audio>
-<audio id="au17" class="au">
-    <source class="song" src="./assets/love for a long time.mp3" type="audio/mp3">
-</audio>
-<audio id="au18" class="au">
-    <source class="song" src="./assets/Oceans Away .mp3" type="audio/mp3">
-</audio>
 
 
-<audio id="au19">
-    <source class="au song" src="./assets/10000 hours.mp3" type="audio/mp3">
-</audio>
+
+
+
+
+
 <audio id="au20">
     <source class="au" src="./assets/afterlife.mp3" type="audio/mp3">
 </audio>
@@ -467,6 +533,9 @@
 <audio id="au27">
     <source class="au song" src="./assets/dieHappy.mp3" type="audio/mp3">
 </audio>
+<audio id="au28">
+    <source class="au song" src="./assets/fiveFinger.mp3" type="audio/mp3">
+</audio>
 <audio id="au29">
     <source class="au song" src="./assets/FromNowhere.mp3" type="audio/mp3">
 </audio>
@@ -476,21 +545,15 @@
 <audio id="au31">
     <source class="au song" src="./assets/good things.mp3" type="audio/mp3">
 </audio>
-<audio id="au32">
-    <source class="au song" src="./assets/goodThingsFallApart.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au33">
     <source class="au" src="./assets/grind me.mp3" type="audio/mp3">
 </audio>
 <audio id="au34">
     <source class="au" src="./assets/grrrl.mp3" type="audio/mp3">
 </audio>
-<audio id="au35">
-    <source class="au song" src="./assets/heartless.mp3" type="audio/mp3">
-</audio>
-<audio id="au36">
-    <source class="au song" src="./assets/lie.mp3" type="audio/mp3">
-</audio>
+
+
 <audio id="au37">
     <source class="au" src="./assets/lunchbox.mp3" type="audio/mp3">
 </audio>
@@ -503,12 +566,7 @@
 <audio id="au40">
     <source class="au song" src="./assets/oh wonder.mp3" type="audio/mp3">
 </audio>
-<audio id="au47">
-    <source class="au" src="./assets/out loud.mp3" type="audio/mp3">
-</audio>
-<audio id="au48">
-    <source class="au" src="./assets/with you.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au49">
     <source class="au" src="./assets/sorry.mp3" type="audio/mp3">
 </audio>
@@ -518,54 +576,11 @@
 <audio id="au51">
     <source class="au songPl3" src="./assets/too tired.mp3" type="audio/mp3">
 </audio>
-<audio id="au52">
-    <source class="au song" src="./assets/StillKids.mp3" type="audio/mp3">
-</audio>
-<audio id="au53">
-    <source class="au songPl3" src="./assets/rabbit hole.mp3" type="audio/mp3">
-</audio>
-<audio id="au54">
-    <source class="au songPl3" src="./assets/saidTheSky.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au55">
     <source class="au songPl3" src="./assets/timeAftertime.mp3" type="audio/mp3">
 </audio>
-<audio id="au56">
-    <source class="au song" src="./assets/hi lo.mp3" type="audio/mp3">
-</audio>
-<audio id="au57">
-    <source class="au song" src="./assets/falling.mp3" type="audio/mp3">
-</audio>
-<audio id="au58">
-    <source class="au song" src="./assets/dear try.mp3" type="audio/mp3">
-</audio>
-<audio id="au59">
-    <source class="au song" src="./assets/what about.mp3" type="audio/mp3">
-</audio>
-<audio id="au60">
-    <source class="au songPl3" src="./assets/talkMeme.mp3" type="audio/mp3">
-</audio>
-<audio id="au61">
-    <source class="au song" src="./assets/sunflower.mp3" type="audio/mp3">
-</audio>
-<audio id="au62">
-    <source class="au song" src="./assets/keepingScore.mp3" type="audio/mp3">
-</audio>
-<audio id="au63">
-    <source class="au song" src="./assets/Superficial Love.mp3" type="audio/mp3">
-</audio>
-<audio id="au64">
-    <source class="au song" src="./assets/Need Somebody.mp3" type="audio/mp3">
-</audio>
-<audio id="au65">
-    <source class="au song" src="./assets/Need Somebody.mp3" type="audio/mp3">
-</audio>
-<audio id="au66">
-    <source class="au song" src="./assets/like i can.mp3" type="audio/mp3">
-</audio>
-<audio id="au67">
-    <source class="au song" src="./assets/make it to me.mp3" type="audio/mp3">
-</audio>
+
 <audio id="au41">
     <source src="./audio/AncientMarketplace.mp3" type="audio/mp3">
 </audio>
@@ -597,10 +612,7 @@
 <audio id="au203" class="au">
     <source class="songPl2" src="./assets/korean/KANA-BOON - Silhouette(MP3_128K).mp3" type="audio/mp3">
 </audio>
-<audio id="au204" class="au">
-    <source class="songPl2" src="./assets/korean/Lucky《幸運》-Jason Mraz feat. Colbie Caillat【中文歌詞版】90_00_s情歌(MP3_128K).mp3"
-        type="audio/mp3">
-</audio>
+
 <audio id="au205" class="au">
     <source class="songPl2" src="./assets/korean/Maiko Fujita - Hanabi (Fireworks) [with lyrics](MP3_128K).mp3" type="audio/mp3">
 </audio>
@@ -628,18 +640,7 @@
 <audio id="au213" class="au">
     <source class="songPl2" src="./assets/korean/魏如萱 waa wei [ 你啊你啊 ] 官方完整試聽版MV(MP3_128K).mp3" type="audio/mp3">
 </audio>
-    <audio id="au1m" class="au"><source class="song" src="./assets/Bubbly.mp3" type="audio/mp3"></audio>
-     <audio id="au2m" class="au"><source class="song" src="./assets/Galdive Lotus.mp3" type="audio/mp3"></audio>
-     <audio id="au3m" class="au"><source class="song" src="./assets/Indigo Bubble Tea.mp3" type="audio/mp3"></audio>
-     <audio id="au4m" class="au"><source class="song" src="./assets/this time.mp3" type="audio/mp3"></audio>
-     <audio id="au5m" class="au"><source class="song" src="./assets/Real Thing.mp3" type="audio/mp3"></audio>
-<!--      <audio id="au6m" class="au"><source class="song" src="./assets/" type="audio/mp3"></audio>
-     <audio id="au7m" class="au"><source class="song" src="./assets/" type="audio/mp3"></audio>
-     <audio id="au8m" class="au"><source class="song" src="./assets/" type="audio/mp3"></audio>
-     <audio id="au9m" class="au"><source class="song" src="./assets/" type="audio/mp3"></audio>
-     <audio id="au10m" class="au"><source class="song" src="./assets/" type="audio/mp3"></audio> -->
 
-   
     <footer>
         <p class="creator">MADE WITH 🖤 BY OM</p>
 
