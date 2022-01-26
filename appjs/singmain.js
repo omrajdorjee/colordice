@@ -1,5 +1,19 @@
 function stopAllAudio() {
-  if (playplay == 'song') {
+    autoClicks();
+    $("button").removeClass("pills");
+    $(".tempo").removeClass("conseal"); 
+    $('.asw-2, .asw-3').removeClass("tglHide");
+    document.body.style.backgroundColor = '#D3DEDC';
+    justStop();  
+};
+//stop button
+function justStop() {
+  var sounds = document.getElementsByTagName('audio');
+  for(i=0; i<sounds.length; i++) sounds[i].pause();
+}
+// toggle auto play button
+function autoClicks() {
+    if (playplay == 'song') {
   document.getElementById("swapImage").click(); 
 }
 else if (playplay == 'songPl2') {
@@ -8,40 +22,40 @@ else if (playplay == 'songPl2') {
 else if (playplay == 'songPl3'){
   document.getElementById("autoPlay-2").click(); 
 }
-    var sounds = document.getElementsByTagName('audio');
-    for (i = 0; i < sounds.length; i++) sounds[i].pause();
-    $("button").removeClass("pills");
-    $(".tempo").removeClass("conseal"); 
-    $('.asw-2, .asw-3').removeClass("tglHide");
-    document.body.style.backgroundColor = '#D3DEDC';
-    playPause('else');
-
-
-};
+}
+// play pause pills button
+function playpauseTrack(audio) {
+  justStop();
+    var curr_track = document.getElementById(audio);
+    curr_track.play();      
+}
+// switch to video section
+function Buttontoggle()
+{
+   var element = document.getElementById("video-section");
+   element.classList.toggle("video-section-tgl");
+    }
 
 
 // ===============
 var imageTracker = 'playImage';
 //set events handlers for on click
 document.getElementById("swapImage").onclick = function() {
+  justStop();
   swapImage('song');
 	playPause('song');
-
 };
 document.getElementById("autoPlay-2").onclick = function() {
+  justStop();
 	swapImage('songPl3');
 	playPause('songPl3');
-
 };
 document.getElementById("autoPlay-3").onclick = function() {
+  justStop();
 	swapImage('songPl2');
 	playPause('songPl2');
 
 };
-document.getElementById("stopImage").onclick = function() {
-	stop();
-  
-}
 document.getElementById("nextImage").onclick = function() {
 	forward();
 }
@@ -49,23 +63,13 @@ document.getElementById("backImage").onclick = function() {
 	backward();
 }
 
-
-
-function Buttontoggle()
-{
-   var element = document.getElementById("video-section");
-   element.classList.toggle("video-section-tgl");
-   
-  }
-  
-
 //hadlers
  var swapImage = function() {
   var image = document.getElementById('swapImage');
   if (imageTracker == 'playImage') {
   $("button").addClass("pills");
     $(".tempo").addClass("conseal"); 
- document.body.style.backgroundColor = '#9AD0EC';
+ document.body.style.backgroundColor = '#c3c3c3';
   } else {
     imageTracker = 'playImage';
   }
@@ -73,9 +77,7 @@ function Buttontoggle()
 
 //playing flag 
 var musicTracker = 'noMusic';
-//playlist audios
-
-  
+//playlist audios 
   var audios = [];
   var playList2 =[];
   var playList3 =[];
@@ -115,22 +117,19 @@ var playPause = function(playList) {
     
     playplay = playList;    
   if (playplay == 'song' && musicTracker == 'noMusic') {
-  	audios[activeTrack].play();
+    audios[activeTrack].play();
     musicTracker = 'playMusic';  
     $('.asw-2, .asw-3').addClass("tglHide");
-    return playplay
   } 
   else if(playplay == 'songPl2' && musicTracker == 'noMusic'){
     playList2[activeTrack].play();   
     musicTracker = 'playMusic';
-    playplay = 'songPl2';
     $('.asw-1, .asw-3').addClass("tglHide");
   }
   
   else if(playplay == 'songPl3' && musicTracker == 'noMusic'){
     playList3[activeTrack].play();
     musicTracker = 'playMusic';
-    playplay = 'songPl3';
     $('.asw-2, .asw-1').addClass("tglHide");
   } 
   else {
@@ -145,17 +144,6 @@ var playPause = function(playList) {
   }
   showPlaying();
   return playplay;
-};
-
-var stop = function() {
-  if (musicTracker == 'playMusic') {
-  	 audios[activeTrack].pause();
-		 audios[activeTrack].currentTime = 0;
-  	 audios[activeTrack].play();
-      
-  } else {
-    audios[activeTrack].currentTime = 0;
-  }
 };
 
 
@@ -184,11 +172,9 @@ var forward = function(){
   }
 	if (playplay == 'songPl3' && musicTracker == 'playMusic') {
   	 playList3[activeTrack].pause();
-		 playList3[activeTrack].currentTime = 0;
-     
+		 playList3[activeTrack].currentTime = 0;  
      increment(playList3);
-  	 playList3[activeTrack].play();
-     
+  	 playList3[activeTrack].play();  
   }
    else {
     increment();
@@ -219,8 +205,7 @@ var backward = function(){
   }
 	if (playplay == 'songPl3' && musicTracker == 'playMusic') {
   	 playList3[activeTrack].pause();
-		 playList3[activeTrack].currentTime = 0;
-     
+		 playList3[activeTrack].currentTime = 0;    
      decrement  (playList3);
   	 playList3[activeTrack].play();
      
@@ -237,25 +222,6 @@ var showPlaying = function()
    $('.audio').addClass("playing");
    console.log(src);
 };
-
-
-var audioArr = document.querySelectorAll(".au");
-function playpauseTrack(audio) {
-    var curr_track = document.getElementById(audio);
-    curr_track.play();
-
-  
-    var buttonArr = document.querySelectorAll(".audio").length;
-    for (var i = 0; i < buttonArr; i++) {
-        document.querySelectorAll(".audio")[i].addEventListener("click", function () {
-            curr_track.pause();          
-          
-        },100)
-    }
-      
-}
-
-
 
 // ===============
 const background = document.querySelector("#title");
