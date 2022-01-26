@@ -29,20 +29,15 @@
         
 <label id="switchVideo" class="switch-slider-wrap">
     <input type="checkbox" onclick="Buttontoggle()">
-    <span class="switch-slider round"></span>
+    <span class="switch-slider round">Audio</span>
 
 </label>
-      <i id="backImage" class="fas fa-arrow-circle-left preAudIcon"></i>    
-        <i id="nextImage" class="fas fa-arrow-circle-right nextAudIcon"></i>
-        <i id="stopImage" class="fas fa-stop-circle fa-4x pauseAudIcon"> </i>
-        <i id="stopBtn" class="fas fa-stop-circle fa-4x pauseAudIcon" onclick="stopAllAudio()"> </i> 
         <div> <a class="openNav nav-open" cursor="pointer" onclick="openNav()"> &#9776; </a></div>
         <div class="tempo"></div>
     </section>
 
 <section class="section" id="sectionOne">
     <div class="chillVibe">
-
         <div class="chillV_top">
             <p class="arow">&#10140;</p>
             <button class="audio chill_list list-one" onclick="playpauseTrack('au1','btn1')" type="button"
@@ -81,145 +76,118 @@
 
         <div id="video-section" class="video-section songList">
 
-           
-<!--             <iframe src="https://www.youtube.com/embed/XitgspIHyls?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/v8LQFItBkMI?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/2lpBvhPH-fM?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/xGuVZwvwbAc?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/taYxyE34jjY?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/CLdeykXCZX4?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/lw51UR6Qoy8?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/hoYOlJB7aU4?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/egUTc3nhwgE?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/LKbzXBEU-lg?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/SkTZu9oPN6E?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/nBteO-bU78Y?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/8MG--WuNW1Y?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/APP2-CovDkY?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/_tV5LEBDs7w?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/lTRiuFIWV54?controls=0"></iframe>
-            <iframe src="https://www.youtube.com/embed/n9Y2Eb4BaSg?controls=0"></iframe> -->
-            <!--          <iframe src="https://www.youtube.com/embed/XitgspIHyls?controls=0"></iframe>
-         <iframe src="https://www.youtube.com/embed/XitgspIHyls?controls=0"></iframe>
-         <iframe src="https://www.youtube.com/embed/XitgspIHyls?controls=0"></iframe>
-         <iframe src="https://www.youtube.com/embed/XitgspIHyls?controls=0"></iframe> -->
 
         </div>
       
-<div class="popSong songList">
-            
-        <input onclick="clicked()" class="stopButton" type="checkbox" id="toggle_checkbox">
+<div class="popSong songList">          
+    <input onclick="clicked()" class="stopButton" type="checkbox" id="toggle_checkbox">
         <label class='autoSwitch asw-1' id="swapImage" for="toggle_checkbox" >Auto Play</label>
-            <hr>
-
-            
+            <hr>  
             <audio id="au1m" class="au">
-                <source class="song" src="./assets/Bubbly.mp3" type="audio/mp3">
+               <source class="song" src="./assets/Bubbly.mp3" type="audio/mp3">
             </audio>
-
-            <button class="audio" onclick="playpauseTrack('au1m','btn3')" type="button"
+              <button class="audio" onclick="playpauseTrack('au1m','btn3')" type="button"
                 style="background-color:#B5EAEA;">Bubbly</button>
-<audio id="au3m" class="au">
-    <source class="song" src="./assets/Indigo  Bubble Tea.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au3m','btn3')" type="button" style="background-color:#B5EAEA;">Indigo
+            <audio id="au3m" class="au">
+               <source class="song" src="./assets/Indigo  Bubble Tea.mp3" type="audio/mp3">
+            </audio>
+              <button class="audio" onclick="playpauseTrack('au3m','btn3')" type="button" style="background-color:#B5EAEA;">Indigo
                 Bubble Tea</button>
-                <audio id="au4m" class="au">
+             <audio id="au4m" class="au">
                     <source class="song" src="./assets/this time.mp3" type="audio/mp3">
-                </audio>
-            <button class="audio" onclick="playpauseTrack('au4m','btn3')" type="button" style="background-color:#B5EAEA;">This
+             </audio>
+              <button class="audio" onclick="playpauseTrack('au4m','btn3')" type="button" style="background-color:#B5EAEA;">This
                 Time</button>
-                <audio id="au5m" class="au">
+               <audio id="au5m" class="au">
                     <source class="song" src="./assets/Real Thing.mp3" type="audio/mp3">
                 </audio>
-            <button class="audio" onclick="playpauseTrack('au5m','btn3')" type="button" style="background-color:#B5EAEA;">Real
+                <button class="audio" onclick="playpauseTrack('au5m','btn3')" type="button" style="background-color:#B5EAEA;">Real
                 Thing</button>
                 
-<audio id="au67"><source class="au song" src="./assets/make it to me.mp3" type="audio/mp3"></audio>
-<button class="audio" onclick="playpauseTrack('au67','btn3')" type="button" style="background-color:#B5EAEA;">Make It to Me</button>
-<audio id="au65">
-    <source class="au song" src="./assets/Need Somebody.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au65','btn3')" type="button"
-                style="background-color:#B5EAEA;">Need Somebody</button>
-<audio id="au63">
-    <source class="au song" src="./assets/Superficial Love.mp3" type="audio/mp3">
-</audio>
-            <button id="btn3" class="audio" onclick="playpauseTrack('au63','btn3')" type="button"
-                style="background-color:#B5EAEA;">Superficial
-                love</button>
-<audio id="au56">
-    <source class="au song" src="./assets/hi lo.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au56')" type="button" style="background-color:#A3E4DB;">Hi
-                Lo</button>
-<audio id="au57">
-    <source class="au song" src="./assets/falling.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au57')" type="button"
-                style="background-color:#FFE162;">Falling</button>
-<audio id="au204" class="au">
-    <source class="song"
-        src="./assets/korean/Lucky《幸運》-Jason Mraz feat. Colbie Caillat【中文歌詞版】90_00_s情歌(MP3_128K).mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au204')" type="button"
-                style="background-color:#EDD2F3;">Lucky</button>
-<audio id="au58">
-    <source class="au song" src="./assets/dear try.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au58')" type="button" style="background-color:#C8E3D4;">Dear
-                Try</button>
-<audio id="au61">
-    <source class="au song" src="./assets/sunflower.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au61')" type="button"
-                style="background-color:#91C483;">Sunflower</button>
-<audio id="au62">
-    <source class="au song" src="./assets/keepingScore.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au62')" type="button"
-                style="background-color:#EEEEEE;">Keeping
-                Score</button>
-<audio id="au59">
-        <source class="au song" src="./assets/what about.mp3" type="audio/mp3">
-     </audio>
-            <button class="audio" onclick="playpauseTrack('au59')" type="button" style="background-color:#F6D7A7;">What
-                About</button>
-<audio id="au47">
-    <source class="au" src="./assets/out loud.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au47')" type="button" style="background-color:#d0abd6;">Out
-                Loud</button>
-<audio id="au52">
-    <source class="au song" src="./assets/StillKids.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au52')" type="button" style="background-color:#E7FBBE;">Still
-                kids</button>
-<audio id="au54">
-    <source class="au songPl3" src="./assets/saidTheSky.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au54')" type="button" style="background-color:#b5ffc1;">Said
-                the Sky</button>
-<audio id="au3" class="au">
-    <source class="song" src="./assets/Runaways.mp3" type="audio/mp3">
-</audio>
-            <button class="audio" onclick="playpauseTrack('au3','btn3')" type="button"
-                style="background-color:#FFD523;">Runaways</button>
-<audio id="au11" class="au">
-    <source class="song" src="./assets/dancing with my ghost.mp3" type="audio/mp3">
-</audio>
-            <button class="audio dio11" onclick="playpauseTrack('au11','btn11')" type="button"
-                style="background-color:#FFCBCB;">Dancing</button>
-<audio id="au32">
-    <source class="au song" src="./assets/goodThingsFallApart.mp3" type="audio/mp3">
-</audio>
-            <button class="audio dio12" onclick="playpauseTrack('au12','btn12')" type="button"
-                style="background-color:#FFCBCB;">Good old
-                Days</button>
-<audio id="au13" class="au">
-    <source class="song" src="./assets/Happier.mp3" type="audio/mp3">
-</audio>
+                <audio id="au67"><source class="au song" src="./assets/make it to me.mp3" type="audio/mp3"></audio>
+                <button class="audio" onclick="playpauseTrack('au67','btn3')" type="button" style="background-color:#B5EAEA;">Make It to Me</button>
+                <audio id="au65">
+                    <source class="au song" src="./assets/Need Somebody.mp3" type="audio/mp3">
+                </audio>
+                            <button class="audio" onclick="playpauseTrack('au65','btn3')" type="button"
+                                style="background-color:#B5EAEA;">Need Somebody</button>
+                <audio id="au63">
+                    <source class="au song" src="./assets/Superficial Love.mp3" type="audio/mp3">
+                </audio>
+                            <button id="btn3" class="audio" onclick="playpauseTrack('au63','btn3')" type="button"
+                                style="background-color:#B5EAEA;">Superficial
+                                love</button>
+                <audio id="au56">
+                    <source class="au song" src="./assets/hi lo.mp3" type="audio/mp3">
+                </audio>
+                            <button class="audio" onclick="playpauseTrack('au56')" type="button" style="background-color:#A3E4DB;">Hi
+                                Lo</button>
+                <audio id="au57">
+                <source class="au song" src="./assets/falling.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au57')" type="button"
+                            style="background-color:#FFE162;">Falling</button>
+            <audio id="au204" class="au">
+                <source class="song"
+                    src="./assets/korean/Lucky《幸運》-Jason Mraz feat. Colbie Caillat【中文歌詞版】90_00_s情歌(MP3_128K).mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au204')" type="button"
+                            style="background-color:#EDD2F3;">Lucky</button>
+            <audio id="au58">
+                <source class="au song" src="./assets/dear try.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au58')" type="button" style="background-color:#C8E3D4;">Dear
+                            Try</button>
+            <audio id="au61">
+                <source class="au song" src="./assets/sunflower.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au61')" type="button"
+                            style="background-color:#91C483;">Sunflower</button>
+            <audio id="au62">
+                <source class="au song" src="./assets/keepingScore.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au62')" type="button"
+                            style="background-color:#EEEEEE;">Keeping
+                            Score</button>
+            <audio id="au59">
+                    <source class="au song" src="./assets/what about.mp3" type="audio/mp3">
+                 </audio>
+                        <button class="audio" onclick="playpauseTrack('au59')" type="button" style="background-color:#F6D7A7;">What
+                            About</button>
+            <audio id="au47">
+                <source class="au" src="./assets/out loud.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au47')" type="button" style="background-color:#d0abd6;">Out
+                            Loud</button>
+            <audio id="au52">
+                <source class="au song" src="./assets/StillKids.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au52')" type="button" style="background-color:#E7FBBE;">Still
+                            kids</button>
+            <audio id="au54">
+                <source class="au songPl3" src="./assets/saidTheSky.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au54')" type="button" style="background-color:#b5ffc1;">Said
+                            the Sky</button>
+            <audio id="au3" class="au">
+                <source class="song" src="./assets/Runaways.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio" onclick="playpauseTrack('au3','btn3')" type="button"
+                            style="background-color:#FFD523;">Runaways</button>
+            <audio id="au11" class="au">
+                <source class="song" src="./assets/dancing with my ghost.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio dio11" onclick="playpauseTrack('au11','btn11')" type="button"
+                            style="background-color:#FFCBCB;">Dancing</button>
+            <audio id="au32">
+                <source class="au song" src="./assets/goodThingsFallApart.mp3" type="audio/mp3">
+            </audio>
+                        <button class="audio dio12" onclick="playpauseTrack('au12','btn12')" type="button"
+                            style="background-color:#FFCBCB;">Good old
+                            Days</button>
+            <audio id="au13" class="au">
+                <source class="song" src="./assets/Happier.mp3" type="audio/mp3">
+            </audio>
             <button class="audio dio13" onclick="playpauseTrack('au13','btn13')" type="button"
                 style="background-color:#FFCBCB;">Happier</button>
                 <audio id="au36">
@@ -284,13 +252,9 @@
     <source class="au song" src="./assets/like i can.mp3" type="audio/mp3">
 </audio>
             <button id="btn3" class="audio" onclick="playpauseTrack('au66','btn3')" type="button"
-                style="background-color: #A2D2FF;">like i can</button>
-            
-           
-           
+                style="background-color: #A2D2FF;">like i can</button>         
         </div>
 
-        <br>
        
         <div class="summer songList">
     <input  type="checkbox" id="toggle_checkbox3">
@@ -370,7 +334,7 @@
                 style="background-color:#FF6363;">如果可以 Red Scarf</button>
 
         </div>
-        <br>
+   
 
         <div class="mood songList">
                 <input class="" type="checkbox" id="toggle_checkbox2">
@@ -410,9 +374,13 @@
         Life</button>
     <button class="audio" onclick="playpauseTrack('au21')" type="button" style="background-color: #E6DDC6;">Anymore</button>
         </div>
-        <br>
-
     </div>
+    <div class="controlBtn">
+    <i id="backImage" class="fas fa-arrow-circle-left preAudIcon"></i>
+    <i id="stopBtn" class="fas fa-stop-circle fa-4x pauseAudIcon" onclick="stopAllAudio()"> </i>
+    <i id="nextImage" class="fas fa-arrow-circle-right nextAudIcon"></i>
+</div>
+</section>
     <!-- ================================================================= -->
     <div id="col-overlay">
         <div id="myNav" class="overlay">
