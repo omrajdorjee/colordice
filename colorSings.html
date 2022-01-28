@@ -75,8 +75,9 @@
 
 
         <div id="video-section" class="video-section songList">
-
-
+ <video controls class="video"><source src="./assets/videos/TABUN YOASOBIたふん Lyrics Video KanRomEng_480p.mp4" type="video/mp4"></video>
+<video controls class="video"><source src="./assets/videos/fall into me.mp4" type="video/mp4"></video>
+<video controls class="video"><source src=".assets/videos/Michael Bublé   Ill Never Not Love You Official Lyric Video_480p.mp4" type="video/mp4"></video>
         </div>
       
 <div class="popSong songList">          
@@ -391,12 +392,19 @@
         Life</button>
     <button class="audio" onclick="playpauseTrack('au21')" type="button" style="background-color: #E6DDC6;">Anymore</button>
         </div>
+ <div class="onlyLs">
+        <i id="backImage" class="fas fa-arrow-circle-left preAudIcon onlyLs"></i>
+        <i id="stopBtn" class="fas fa-stop-circle fa-4x pauseAudIcon onlyLs" onclick="stopAllAudio()"> </i>
+        <i id="nextImage" class="fas fa-arrow-circle-right nextAudIcon onlyLs"></i>
     </div>
-    <div class="controlBtn">
-    <i id="backImage" class="fas fa-arrow-circle-left preAudIcon"></i>
-    <i id="stopBtn" class="fas fa-stop-circle fa-4x pauseAudIcon" onclick="stopAllAudio()"> </i>
-    <i id="nextImage" class="fas fa-arrow-circle-right nextAudIcon"></i>
-</div>
+    <div class="controlBtnOnlySs">
+        <i class="fas fa-video videoIcon onlySs" onclick="Buttontoggle()"></i>
+        <i class="fas fa-capsules onlySs" onclick="Buttontoggle()"></i>
+        <i id="backImage" class="fas fa-arrow-circle-left preAudIcon onlySs"></i>
+        <i id="stopBtn" class="fas fa-stop-circle fa-4x pauseAudIcon onlySs" onclick="stopAllAudio()"> </i>
+        <i id="nextImage" class="fas fa-arrow-circle-right nextAudIcon onlySs"></i>
+        <hr class='onlySs' style="width: 60%">
+    </div>
 </section>
     <!-- ================================================================= -->
     <div id="col-overlay">
