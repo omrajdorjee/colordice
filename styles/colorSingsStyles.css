@@ -903,16 +903,8 @@
     visibility: hidden;
     position: absolute;
   }
-  .pauseAudIcon {
-   padding: 0 12px;
-    z-index: 99;
-  }
-  .nextAudIcon {
-  padding: 0 12px;  
-    z-index: 99;
-  }
-  .preAudIcon {
-   padding: 0 12px; 
+ .fasIcon {
+    padding: 0 12px;
     z-index: 99;
   }
   .fas {
