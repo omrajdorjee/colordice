@@ -10,12 +10,18 @@
   .conseal {
     position: absolute;
     left: 0;
-
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.424);
+    background-color: rgba(0, 0, 0, 0.419);
     z-index: 1;
+  
   }
+.curr-playlist{
+  /* height: 300px!important; */
+  width: 50% !important;
+  transition: ease-in-out 1s;
+  /* border-radius: 50%!important; */
+}
   iframe {
     border-radius: 20px;
     width: 20%;
@@ -68,6 +74,7 @@
     /* transition: all 0.5s; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    transition: all 1s;
   }
 
   P {
@@ -132,6 +139,15 @@
     margin: 0% 1%;
     overflow: scroll;
     height: 88%;
+    transition: all 1s;
+     overflow: hidden;
+    vertical-align: middle;
+    margin-top: 0px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
+    overflow: scroll;
   }
   .chillVibe {
     background: #ffffff34;
@@ -144,44 +160,34 @@
     white-space: nowrap;
   }
   .popSong {
-    overflow: hidden;
-    vertical-align: middle;
-    margin-top: 0px;
-    background-color: #ffffff57;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
-    overflow: scroll;
+   
   }
   .summer {
-    margin-top: 0px;
-    background-color: #ffffff57;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
-    overflow: scroll;
-    box-sizing: border-box;
+   
   }
   .mood {
-    margin-top: 0px;
-    background-color: #ffffff57;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
-    overflow: scroll;
+  
+  }
+  .playlist-4 {
+    
   }
   .video-section {
     position: absolute;
     left: 0;
     height: 0;
-    width: 100%;
+    width: 98vw;
     background-color: #f0f0f0;
     overflow: scroll;
     border-radius: 20px;
     color: rgb(34, 34, 34);
-    -webkit-box-shadow: 0px -8px 24px -2px #000000d1;
-    box-shadow: 0px 2px 10px 2px #0000002c;
     z-index: 99;
+    text-align: center;
+  }
+  .video-section-tgl {
+    height: 70%;
+    width: 98%;
+    position: absolute;
+    left: 0 !important;
   }
   .video-section-tgl {
     height: 70%;
@@ -250,23 +256,14 @@
     color: #fff !important;
     transition: 0.5s ease top, 0.5s ease left;
   }
-  .autoSwitch:before {
-    position: relative;
-    top: 0;
-    left: 12px;
-    width: 29px;
-    height: 29px;
-    border: 3px solid #ffffff;
-    background-color: #444444;
-  }
-  .autoSwitch:after {
+    .autoSwitch:after {
     content: "";
     position: relative;
     top: 0;
     right: 0;
     width: 115px;
     height: 30px;
-    border: 3px solid #ffffff;
+    border: 3px solid #585858;
   }
   .autoSwitch:before,
   .autoSwitch:after {
@@ -291,8 +288,8 @@
     right: 0px;
     width: 29px;
     height: 29px;
-    border-color: #ffffff;
-    background-color: #000000;
+    border-color: #616161;
+    background-color: #a7a7a7;
   }
   #toggle_checkbox2:checked + .autoSwitch:before {
     top: 0;
@@ -307,8 +304,8 @@
     right: 0px;
     width: 29px;
     height: 29px;
-    border-color: #ffffff;
-    background-color: #000000;
+     border-color: #616161;
+    background-color: #a7a7a7;
   }
   #toggle_checkbox3:checked + .autoSwitch:before {
     top: 0;
@@ -323,9 +320,26 @@
     right: 0px;
     width: 29px;
     height: 29px;
-    border-color: #ffffff;
-    background-color: #000000;
+    border-color: #616161;
+    background-color: #a7a7a7;
   }
+  #toggle_checkbox4:checked + .autoSwitch:before {
+    top: 0;
+    left: 10px;
+    width: 115px;
+    height: 30px;
+    border-color: #ffffff;
+  }
+
+  #toggle_checkbox4:checked + .autoSwitch:after {
+    top: 0;
+    right: 0px;
+    width: 29px;
+    height: 29px;
+   border-color: #616161;
+    background-color: #a7a7a7;
+  }
+
 
   .autoSwitch {
     position: relative;
@@ -457,11 +471,11 @@
     transition: ease-in-out 0.2s;
   }
   .pills {
-    background-color: #3b3b3b !important;
+    background-color: #ffffff96 !important;
     border-radius: 20px;
-    color: #ffffff;
+    color: #000000;
     text-shadow: 1px -1px 5px #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid #959595;
     text-align: center;
     padding: 0px 10px 5px;
     margin: 1%;
@@ -803,12 +817,19 @@
     text-align: center;
   }
 
-  .songList {
+   .songList {
     vertical-align: middle;
     width: 95.5%;
     margin: 0px auto 10px;
     padding: 2%;
     text-align: center;
+    background-color: #fff8f3;
+    height: 60%;
+    overflow: scroll;
+    border-radius: 20px;
+    color: rgb(34, 34, 34);
+    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
   }
   .chillVibe {
     /* overflow: scroll; */
@@ -824,30 +845,13 @@
     z-index: 3;
   }
   .popSong {
-    /*     margin-top: 10%; */
-    background-color: #fff8f3;
-    overflow: scroll;
-    height: 60%;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
+ 
   }
   .summer {
-    background-color: #fff8f3;
-    overflow: scroll;
-    height: 60%;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
+   
   }
   .mood {
-    background-color: #fff8f3;
-    height: 60%;
-    overflow: scroll;
-    border-radius: 20px;
-    color: rgb(34, 34, 34);
-    -webkit-box-shadow: 0px -8px 24px -2px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.171);
+   
   }
   .video-section {
 /*     visibility: hidden; */
@@ -1038,11 +1042,11 @@
     transition: ease-in-out 0.2s;
   }
   .pills {
-    background-color: #626262 !important;
+    background-color: #ffffff96 !important;
     border-radius: 20px;
-    color: #ffffff;
+    color: #000000;
     text-shadow: 1px -1px 5px #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid #959595;
     text-align: center;
     padding: 0px 10px 5px;
     margin: 1%;
@@ -1174,6 +1178,22 @@
     border-color: #ffffff;
     background-color: #000000;
   }
+ #toggle_checkbox4:checked + .autoSwitch:before {
+    top: 0;
+    left: 10px;
+    width: 80px;
+    height: 20px;
+    border-color: #ffffff;
+  }
+
+  #toggle_checkbox4:checked + .autoSwitch:after {
+    top: 0;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    border-color: #ffffff;
+    background-color: #000000;
+  }
 
   .conseal {
     position: absolute;
@@ -1298,7 +1318,9 @@
 #toggle_checkbox3 {
   display: none;
 }
-
+#toggle_checkbox4 {
+  display: none;
+}
 .tglHide {
   visibility: hidden;
   transition: all 0s;
