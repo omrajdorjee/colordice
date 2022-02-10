@@ -1,8 +1,22 @@
+function changeBodyBg(color){
+      document.body.style.background = color;
+      document.getElementById("btn").style.background = color;
+       document.getElementById
+  }
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+//Stop all playing audios
 function stopAllAudio() {
     autoClicks();
     $("button").removeClass("pills");
     $(".tempo").removeClass("conseal"); 
-    $('.asw-2, .asw-3').removeClass("tglHide");
+    $('.asw-2, .asw-3, .asw-4, .asw-1').removeClass("tglHide");
     document.body.style.backgroundColor = '#D3DEDC';
     justStop();  
 };
@@ -21,6 +35,9 @@ else if (playplay == 'songPl2') {
 }
 else if (playplay == 'songPl3'){
   document.getElementById("autoPlay-2").click(); 
+}
+else if (playplay == 'songPl4'){
+  document.getElementById("autoPlay-4").click(); 
 }
 }
 // play pause pills button
@@ -56,6 +73,12 @@ document.getElementById("autoPlay-3").onclick = function() {
 	playPause('songPl2');
 
 };
+document.getElementById("autoPlay-4").onclick = function() {
+  justStop();
+	swapImage('songPl4');
+	playPause('songPl4');
+
+};
 document.getElementById("nextImage").onclick = function() {
 	forward();
 }
@@ -81,6 +104,7 @@ var musicTracker = 'noMusic';
   var audios = [];
   var playList2 =[];
   var playList3 =[];
+  var playList4 =[];
 
  $('.song').each(function(){
  		var load = new  Audio($(this).attr("src"));
@@ -107,39 +131,64 @@ var musicTracker = 'noMusic';
     });
     playList3.push(load);
  });
+ $('.songPl4').each(function(){
+ 		var load = new  Audio($(this).attr("src"));
+    load.load();
+    load.addEventListener('ended',function(){
+       forward();
+    });
+    playList4.push(load);
+ });
 
 
 //active track
 var activeTrack = 0;
 
 let playplay = "";
-var playPause = function(playList) {
-    
+
+var playPause = function(playList) {  
     playplay = playList;    
   if (playplay == 'song' && musicTracker == 'noMusic') {
     audios[activeTrack].play();
     musicTracker = 'playMusic';  
-    $('.asw-2, .asw-3').addClass("tglHide");
+    $('.asw-2, .asw-3, .asw-4').addClass("tglHide");
+    $(".popSong").addClass("curr-playlist");
+
+
   } 
   else if(playplay == 'songPl2' && musicTracker == 'noMusic'){
     playList2[activeTrack].play();   
     musicTracker = 'playMusic';
-    $('.asw-1, .asw-3').addClass("tglHide");
+    $('.asw-1, .asw-3, .asw-4').addClass("tglHide");
+    $(".summer").addClass("curr-playlist");
+
   }
   
   else if(playplay == 'songPl3' && musicTracker == 'noMusic'){
     playList3[activeTrack].play();
     musicTracker = 'playMusic';
-    $('.asw-2, .asw-1').addClass("tglHide");
+    $('.asw-2, .asw-1, .asw-4').addClass("tglHide");
+    $(".mood").addClass("curr-playlist");
+
+  } 
+  else if(playplay == 'songPl4' && musicTracker == 'noMusic'){
+    playList4[activeTrack].play();
+    musicTracker = 'playMusic';
+    $('.asw-2, .asw-1, .asw-3').addClass("tglHide");
+    $(".playlist-4").addClass("curr-playlist");
+
   } 
   else {
     $(".tempo").removeClass("conseal"); 
      audios[activeTrack].pause();
     playList2[activeTrack].pause();
     playList3[activeTrack].pause();
+    playList4[activeTrack].pause();
    document.body.style.backgroundColor = '#D3DEDC';
-   $('.asw-2, .asw-3, .asw-1').removeClass("tglHide");
+   $('.asw-2, .asw-3, .asw-1, .asw-4').removeClass("tglHide");
    $("button").removeClass("pills");
+   $(".popSong, .playlist-4, .mood, .summer").removeClass("curr-playlist");
+
     musicTracker = 'noMusic';
   }
   showPlaying();
@@ -176,6 +225,12 @@ var forward = function(){
      increment(playList3);
   	 playList3[activeTrack].play();  
   }
+	if (playplay == 'songPl4' && musicTracker == 'playMusic') {
+  	 playList4[activeTrack].pause();
+		 playList4[activeTrack].currentTime = 0;  
+     increment(playList4);
+  	 playList4[activeTrack].play();  
+  }
    else {
     increment();
   }
@@ -208,6 +263,13 @@ var backward = function(){
 		 playList3[activeTrack].currentTime = 0;    
      decrement  (playList3);
   	 playList3[activeTrack].play();
+     
+  }
+	if (playplay == 'songPl3' && musicTracker == 'playMusic') {
+  	 playList4[activeTrack].pause();
+		 playList4[activeTrack].currentTime = 0;    
+     decrement  (playList4);
+  	 playList4[activeTrack].play();
      
   }
   else {
