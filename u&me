@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #e9efc0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      font-size: 5rem;
+    }
+    .red{
+        animation: roll;
+    }
+    @keyframes roll {
+       to{
+           transform: rotate(10deg)
+       } 
+    }
+  </style>
+  <body>
+    <div class="container">
+      <span class="text">🤍</span>
+      <span class="text red">❤️</span>
+      <span class="text">💚</span>
+    </div>
+  </body>
+</html>
