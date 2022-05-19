@@ -38,7 +38,7 @@
                     </filter>
                 </defs>
                 <div class=greet-container><button class="btn emotBtn" id=emotBtn>Click Me</button></div>
-                <script>var emot = document.getElementById("emot"); var emotBtn = document.getElementById("emotBtn"); const d = new Date(); let dd = d.getHours(); let hour = 22; emotBtn.addEventListener("click", function () {
+                <script>var emot = document.getElementById("emot"); var emotBtn = document.getElementById("emotBtn"); const d = new Date(); let dd = d.getHours(); let hour = dd + 1; emotBtn.addEventListener("click", function () {
                         emot.classList.toggle("op"); document.body.classList.toggle("bg-dark"); if (hour >= 3 && hour < 10) { document.getElementById("emotBtn").innerHTML = "GOOD MORNING"; }
                         if (hour >= 16 && hour <= 20) { document.getElementById("emotBtn").innerHTML = "GOOD EVENING"; }
                         if (hour >= 20 && hour <= 24) { document.getElementById("emotBtn").innerHTML = "BED TIME<br>GOOD NIGHT"; }
