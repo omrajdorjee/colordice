@@ -1,92 +1,57 @@
-<!DOCTYPE html>
-<html lang=en>
-<head>
-<meta charset=UTF-8 />
-<meta http-equiv=X-UA-Compatible content="IE=edge" />
-<meta name=viewport content="width=device-width, initial-scale=1.0" />
-<title>Document</title>
-<script src=https://kit.fontawesome.com/d8142c1244.js crossorigin=anonymous></script>
-</head>
-<style>@import url('https://fonts.googleapis.com/css?family=Roboto:300');@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fredoka+One&display=swap');.container{display:flex;justify-content:center;align-items:center}.text{font-size:5rem}.red{animation:roll;animation-timing-function:infinite}@keyframes roll{from{transform:rotateX(10deg)}to{transform:rotateX(100deg)}}*{font-family:'Fredoka One',cursive}body{background:linear-gradient(90deg,#C1F8CF 40%,#C1F8CF 50%,#EFFFFD 40%);height:100vh;overflow:hidden}.container{display:flex;justify-content:center;align-items:center}.circle{position:absolute;top:30%;left:50%}img{transform:translate(-50%,-50%);border:5px solid #fff;border-radius:50%}.heart{font-size:4rem}@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");body{margin:0}#container{position:absolute;margin:auto;width:100vw;height:80pt;top:0;bottom:0;filter:url(#threshold) blur(0.6px)}#text1,#text2{position:absolute;width:100%;display:inline-block;background:linear-gradient(to right,#ffffff 40%,#00ff1e 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:80pt;text-align:center;user-select:none;text-shadow:1px 3px 0 #ffffff,1px 13px 5px #b4ff9f}#heart{position:relative;width:100%;height:20vh;padding:5% auto;display:flex;justify-content:center;align-items:center}.heart-1{color:#fff;font-size:6rem}.heart-2{position:absolute;top:35%;font-size:1.5rem;background:linear-gradient(to right,#B4FF9F 0,#fff 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.heart-3{color:#b4ff9f;font-size:6rem}.snowflake{color:#fff;font-size:3em;font-family:Arial;text-shadow:0 0 1px #000}.snowflakes{opacity:0}.op{opacity:1}@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(11){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(12){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(13){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.btn{display:flex;justify-content:center;align-items:center;position:relative;top:30vh;z-index:99999}.emotBtn{padding:20px;border:0;font-size:2rem}.emotBtn:hover{background-color:#b4ff9f}</style>
-<body>
-<div>
-<div id=heart>
-<i class="fa-solid fa-heart heart-1"></i>
-<i class="fa-solid fa-infinity fa-heart heart-2"></i>
-<i class="fa-solid fa-heart heart-3"></i>
-</div>
-<div class="circle image">
-<img src=https://i.ibb.co/GpZjKhC/asdfghjkl.jpg alt=asdfghjkl>
-</div>
-<div class=snowflakes id=emot aria-hidden=true>
-<div class=snowflake>
-💚
-</div>
-<div class=snowflake>
-🥰
-</div>
-<div class=snowflake>
-💚
-</div>
-<div class=snowflake>
-😚
-</div>
-<div class=snowflake>
-🤍
-</div>
-<div class=snowflake>
-😚
-</div>
-<div class=snowflake>
-😚
-</div>
-<div class=snowflake>
-🤍
-</div>
-<div class=snowflake>
-🥰
-</div>
-<div class=snowflake>
-😚
-</div>
-<div class=snowflake>
-🤍
-</div>
-<div class=snowflake>
-😚
-</div>
-<div class=snowflake>
-🥰
-</div>
-<div class=snowflake>
-🤍
-</div>
-</div>
-<div id=container>
-<span id=text1></span>
-<span id=text2></span>
-</div>
-<svg id=filters>
-<defs>
-<filter id=threshold>
-<feColorMatrix in=SourceGraphic type=matrix values="1 0 0 0 0
+<!doctypehtml>
+    <html lang=en>
+        <meta charset=UTF-8>
+        <meta content="IE=edge" http-equiv=X-UA-Compatible>
+        <meta content="width=device-width,initial-scale=1" name=viewport>
+        <title>Document</title>
+        <script crossorigin=anonymous src=https://kit.fontawesome.com/d8142c1244.js></script>
+        <style>
+@import "https://fonts.googleapis.com/css?family=Roboto:300";@import "https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fredoka+One&display=swap";.container{display:flex;justify-content:center;align-items:center}.text{font-size:5rem}.red{animation:roll;animation-timing-function:infinite}@keyframes roll{from{transform:rotateX(10deg)}to{transform:rotateX(100deg)}}*{font-family:'Fredoka One',cursive}body{background:linear-gradient(90deg,#c0eda6 40%,#c0eda6 50%,#effffd 40%);height:100vh;margin:0;overflow:hidden}.bg-dark{background:#3a3845}.container{display:flex;justify-content:center;align-items:center}.circle{position:absolute;top:30%;left:50%}img{width:160px;height:160px;transform:translate(-50%,-50%);border:5px solid #fff;border-radius:50%;object-fit:contain}@media screen and (min-width:688px){img{width:200px;height:200px}}.heart{font-size:4rem}#container{position:absolute;margin:auto;width:100vw;height:80pt;top:0;bottom:0;filter:url(#threshold) blur(.6px)}#text1,#text2{position:absolute;width:100%;display:inline-block;background:linear-gradient(to right,#fff 40%,#00ff1e 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:80pt;text-align:center;user-select:none;text-shadow:1px 3px 0 #fff,1px 13px 5px #b4ff9f}#heart{position:relative;width:100%;height:20vh;padding:5% auto;display:flex;justify-content:center;align-items:center}.heart-1{color:#fff;font-size:6rem}.heart-2{position:absolute;top:35%;font-size:1.5rem;background:linear-gradient(to right,#b4ff9f 0,#fff 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.heart-3{color:#b4ff9f;font-size:6rem}.snowflake{color:#fff;font-size:3em;font-family:Arial;text-shadow:0 0 1px #000}.snowflakes{opacity:0}.op{opacity:1}@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0)}50%{transform:translateX(80px)}100%{transform:translateX(0)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0;animation-delay:0s,0}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0;animation-delay:1s,0}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(11){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(12){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(13){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.emotBtn{padding:15px;border:0;font-size:2rem;background-color:#fff;color:#7d7d7d}.emotBtn:hover{background-color:#8bdb81;color:#fffdde}#greet{color:#d9d7f1}.greet-container{margin-top:5%;display:flex;justify-content:center;align-items:center;flex:column;height:400px;width:100%}
+        </style>
+        <div>
+            <div id=heart><i class="fa-heart fa-solid heart-1"></i><i
+                    class="fa-heart fa-solid fa-infinity heart-2"></i><i class="fa-heart fa-solid heart-3"></i></div>
+            <div class="circle image"><img alt=asdfghjkl src=https://i.ibb.co/k3xBG8y/qwertyuiop.jpg></div>
+            <div class=snowflakes aria-hidden=true id=emot>
+                <div class=snowflake>💚</div>
+                <div class=snowflake>🥰</div>
+                <div class=snowflake>💚</div>
+                <div class=snowflake>😚</div>
+                <div class=snowflake>🤍</div>
+                <div class=snowflake>😚</div>
+                <div class=snowflake>😚</div>
+                <div class=snowflake>🤍</div>
+                <div class=snowflake>🥰</div>
+                <div class=snowflake>😚</div>
+                <div class=snowflake>🤍</div>
+                <div class=snowflake>😚</div>
+                <div class=snowflake>🥰</div>
+                <div class=snowflake>🤍</div>
+            </div>
+            <div id=container><span id=text1></span><span id=text2></span></div><svg id=filters>
+                <defs>
+                    <filter id=threshold>
+                        <feColorMatrix in=SourceGraphic type=matrix values="1 0 0 0 0
                   0 1 0 0 0
                   0 0 1 0 0
                   0 0 0 255 -140" />
-</filter>
-</defs>
-<div class=btn>
-<button class=emotBtn id=emotBtn>Click Me</button>
-</div>
-<script type=text/javascript>var emot=document.getElementById('emot')
-var emotBtn=document.getElementById('emotBtn')
-emotBtn.addEventListener('click',function(){emot.classList.toggle('op')})
-const elts={text1:document.getElementById("text1"),text2:document.getElementById("text2"),};const texts=["I","Love","You","My","Baby","∞"];const morphTime=1;const cooldownTime=0.25;let textIndex=texts.length-1;let time=new Date();let morph=0;let cooldown=cooldownTime;elts.text1.textContent=texts[textIndex%texts.length];elts.text2.textContent=texts[(textIndex+1)%texts.length];function doMorph(){morph-=cooldown;cooldown=0;let fraction=morph/morphTime;if(fraction>1){cooldown=cooldownTime;fraction=1;}
-setMorph(fraction);}
-function setMorph(fraction){elts.text2.style.filter=`blur(${Math.min(8/fraction-8,100)}px)`;elts.text2.style.opacity=`${Math.pow(fraction,0.4)*100}%`;fraction=1-fraction;elts.text1.style.filter=`blur(${Math.min(8/fraction-8,100)}px)`;elts.text1.style.opacity=`${Math.pow(fraction,0.4)*100}%`;elts.text1.textContent=texts[textIndex%texts.length];elts.text2.textContent=texts[(textIndex+1)%texts.length];}
-function doCooldown(){morph=0;elts.text2.style.filter="";elts.text2.style.opacity="100%";elts.text1.style.filter="";elts.text1.style.opacity="0%";}
-function animate(){requestAnimationFrame(animate);let newTime=new Date();let shouldIncrementIndex=cooldown>0;let dt=(newTime-time)/1000;time=newTime;cooldown-=dt;if(cooldown<=0){if(shouldIncrementIndex){textIndex++;}
-doMorph();}else{doCooldown();}}
-animate();</script>
-</body>
-</html>
+                    </filter>
+                </defs>
+                <div class=greet-container><button class="btn emotBtn" id=emotBtn>Click Me</button></div>
+                <script>var emot = document.getElementById("emot"); var emotBtn = document.getElementById("emotBtn"); const d = new Date(); let dd = d.getHours(); let hour = 22; emotBtn.addEventListener("click", function () {
+                        emot.classList.toggle("op"); document.body.classList.toggle("bg-dark"); if (hour >= 3 && hour < 10) { document.getElementById("emotBtn").innerHTML = "GOOD MORNING"; }
+                        if (hour >= 16 && hour <= 20) { document.getElementById("emotBtn").innerHTML = "GOOD EVENING"; }
+                        if (hour >= 20 && hour <= 24) { document.getElementById("emotBtn").innerHTML = "BED TIME<br>GOOD NIGHT"; }
+                    }); const elts = { text1: document.getElementById("text1"), text2: document.getElementById("text2"), }; const texts = ["I", "Love", "You", "My", "Baby", "∞"]; const morphTime = 1; const cooldownTime = 0.25; let textIndex = texts.length - 1; let time = new Date(); let morph = 0; let cooldown = cooldownTime; elts.text1.textContent = texts[textIndex % texts.length]; elts.text2.textContent = texts[(textIndex + 1) % texts.length]; function doMorph() {
+                        morph -= cooldown; cooldown = 0; let fraction = morph / morphTime; if (fraction > 1) { cooldown = cooldownTime; fraction = 1; }
+                        setMorph(fraction);
+                    }
+                    function setMorph(fraction) { elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`; elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`; fraction = 1 - fraction; elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`; elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`; elts.text1.textContent = texts[textIndex % texts.length]; elts.text2.textContent = texts[(textIndex + 1) % texts.length]; }
+                    function doCooldown() { morph = 0; elts.text2.style.filter = ""; elts.text2.style.opacity = "100%"; elts.text1.style.filter = ""; elts.text1.style.opacity = "0%"; }
+                    function animate() {
+                        requestAnimationFrame(animate); let newTime = new Date(); let shouldIncrementIndex = cooldown > 0; let dt = (newTime - time) / 1000; time = newTime; cooldown -= dt; if (cooldown <= 0) {
+                            if (shouldIncrementIndex) { textIndex++; }
+                            doMorph();
+                        } else { doCooldown(); }
+                    }
+                    animate();</script>
