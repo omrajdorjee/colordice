@@ -1,103 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/d8142c1244.js" crossorigin="anonymous"></script>
   </head>
+
   <style>
-   @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fredoka+One&display=swap');
+    body {
+      background-color: #e9efc0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      font-size: 5rem;
+    }
+
+    .red {
+      animation: roll;
+      animation-timing-function: infinite;
+    }
+
+    @keyframes roll {
+      from {
+        transform: rotateX(10deg);
+      }
+
+      to {
+        transform: rotateX(100deg);
+      }
+    }
+
+*{
+     font-family: 'Fredoka One', cursive;
+
+}
+    body {
+      
+      background: linear-gradient(0deg, #191919 25%, #191919 75%, #191919 35%);
+      height: 100vh;
+      overflow: hidden;
+   
+    }
+
+    .container {
+       display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+
+    .circle {
+     position: absolute;
+      top: 30%;
+      left: 50%;
+
+    }
+
+    img {
+      transform: translate(-50%, -50%);
+      border: 5px solid #fff;
+      border-radius: 50%;
+
+    }
+    .heart {
+      font-size: 4rem;
+    }
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
 body {
-  text-align:center;
-  background:linear-gradient(0deg, #fff 25%, #FFFFFF 75%, #B8F1B0 35%);
-  color:#EB5353;
- font-family: 'Fredoka One', cursive;
-  font-weight:300;
-  font-size:32px;
-  padding-top:60vh;
-  height:100vh;
-  overflow:hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
+    margin: 0px;
 }
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
 }
-.circle{
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+ /* color: linear-gradient(0deg, #fff 25%, #FFFFFF 75%, #FDF6EC 35%); */
+  background: linear-gradient(to right, #ffffff 0%, #75ff1f 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+ 
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+    #heart{
+      position: relative;
+      width: 100%;
+      height: 20vh;
+       padding: 5% auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .fa-heart{
+    
+
+     
+    }
+    .heart-1{
+     color: #fff;
+       font-size: 6rem;
+    }
+    .heart-2{
+      position: absolute;
+      top: 35%;
+        font-size: 1.5rem;
+  color: #f94430;
+    }
+    .heart-3{
+       color: #B4FF9F;
+         font-size: 6rem;
+    }
+  .snowflake {
+  color: #fff;
+  font-size: 4em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+
+}
+  .snowflakes {
+
+  opacity: 0;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+
+
+.btn{
+ display: flex;
+ justify-content: center;align-items: center;
  position: relative;
-  top: -20%;
+ top: 30vh;
  
 }
-img{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #fff;
-   border-radius: 50%;
-  
+.emotBtn{
+  padding: 20px;
+ border: none;
+ font-size: 2rem;
 }
-.text {
-
-  width: 80%;
-  display:block;
-  overflow:hidden;
-  white-space:nowrap;
+.emotBtn:hover{
+ background-color: #B4FF9F;
 }
-
-.text {   
-  animation: showup 10s infinite;
-}
-
-.textd {
-  width:0px;
-  animation: reveal 20s infinite;
-}
-
-.text {
-/*   margin-bottom:-355px; */
-  
-  animation: slidein 7s infinite;
-}
-
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-
-@keyframes slidein {
-    0% { margin-left:-900px; }
-    20% { margin-left:-200px; }
-    35% { margin-left: 0px;  margin-right: -100px  }
-    100% { margin-left:0px;}
-}
-
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
-
-
-
   </style>
+
   <body>
-   <div class="circle image">
- <img src="https://i.ibb.co/GpZjKhC/asdfghjkl.jpg" alt="asdfghjkl">
-</div>
-<div class="heart">🤍❤️💚</div> 
-<div class="container"> 
-  <div class="text">I love You</div>
+    <div>
+      <div id="heart">
+       <i class="fa-solid fa-heart heart-1"></i>
+       <!-- <i class="fa-solid fa-heart heart-2"></i> -->
+       <i class="fa-solid fa-infinity fa-heart heart-2"></i>
+       <i class="fa-solid fa-heart heart-3"></i>
+      </div>
+    <div class="circle image">
+      <img src="https://i.ibb.co/GpZjKhC/asdfghjkl.jpg" alt="asdfghjkl">
+    </div>
+
+
+     <div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
 </div>
 
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" />
+        </filter>
+    </defs>
+<div class="btn">
+  <button class="emotBtn" id="emotBtn">Click Me</button>
+</div>
+<div class="snowflakes" id="emot" aria-hidden="true">
+  <div class="snowflake">
+  😚
+  </div>
+  <div class="snowflake">
+  😚
+  </div>
+  <div class="snowflake">
+  💚
+  </div>
+  <div class="snowflake">
+  😚
+  </div>
+  <div class="snowflake">
+  ❤️
+  </div>
+  <div class="snowflake">
+  😚
+  </div>
+  <div class="snowflake">
+  😚
+  </div>
+  <div class="snowflake">
+  🤍
+  </div>
+  <div class="snowflake">
+  😚
+  </div>
+  <div class="snowflake">
+  😚
+  </div>
+</div>
+        <script type="text/javascript">
+          var emot = document.getElementById('emot')
+          var emotBtn = document.getElementById('emotBtn')
+          emotBtn.addEventListener('click', function(){
+            emot.style.opacity = "1";
+          })
+
+          const elts = {
+            text1: document.getElementById("text1"),
+            text2: document.getElementById("text2"),
+          };
+
+          const texts = [
+            "I",
+            "Love",
+            "You",
+            "My",
+            "Baby",  
+           "∞"
+
+          ];
+
+          const morphTime = 1;
+          const cooldownTime = 0.25;
+
+          let textIndex = texts.length - 1;
+          let time = new Date();
+          let morph = 0;
+          let cooldown = cooldownTime;
+
+          elts.text1.textContent = texts[textIndex % texts.length];
+          elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+          function doMorph() {
+            morph -= cooldown;
+            cooldown = 0;
+
+            let fraction = morph / morphTime;
+
+            if (fraction > 1) {
+              cooldown = cooldownTime;
+              fraction = 1;
+            }
+
+            setMorph(fraction);
+          }
+
+          function setMorph(fraction) {
+            elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+            elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+            fraction = 1 - fraction;
+            elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+            elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+            elts.text1.textContent = texts[textIndex % texts.length];
+            elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+          }
+
+          function doCooldown() {
+            morph = 0;
+
+            elts.text2.style.filter = "";
+            elts.text2.style.opacity = "100%";
+
+            elts.text1.style.filter = "";
+            elts.text1.style.opacity = "0%";
+          }
+
+          function animate() {
+            requestAnimationFrame(animate);
+
+            let newTime = new Date();
+            let shouldIncrementIndex = cooldown > 0;
+            let dt = (newTime - time) / 1000;
+            time = newTime;
+
+            cooldown -= dt;
+
+            if (cooldown <= 0) {
+              if (shouldIncrementIndex) {
+                textIndex++;
+              }
+
+              doMorph();
+            } else {
+              doCooldown();
+            }
+          }
+
+          animate();
+
+        
+          
+        </script>
   </body>
+
 </html>
