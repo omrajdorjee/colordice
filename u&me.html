@@ -12,10 +12,7 @@
     @import url('https://fonts.googleapis.com/css?family=Roboto:300');
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fredoka+One&display=swap');
 
-    body {
-      background-color: #e9efc0;
-    }
-
+ 
     .container {
       display: flex;
       justify-content: center;
@@ -48,7 +45,7 @@
 
     body {
 
-      background: linear-gradient(0deg, #191919 25%, #191919 75%, #191919 35%);
+      background: linear-gradient(90deg, #C1F8CF 40%, #C1F8CF 50%, #EFFFFD 40%);
       height: 100vh;
       overflow: hidden;
 
@@ -102,17 +99,15 @@
       width: 100%;
       display: inline-block;
       /* color: linear-gradient(0deg, #fff 25%, #FFFFFF 75%, #FDF6EC 35%); */
-      background: linear-gradient(to right, #ffffff 0%, #75ff1f 100%);
+      background: linear-gradient(to right, #ffffff 40%, #00ff1e 100%);
       /* Mask the color to the text, and remove the rest  */
       -webkit-background-clip: text;
       /* Make the text fill color value transparent so the masked background color comes through */
       -webkit-text-fill-color: transparent;
-
       font-size: 80pt;
-
       text-align: center;
-
       user-select: none;
+  text-shadow: 1px 3px 0 #ffffff, 1px 13px 5px #B4FF9F;
     }
 
     #heart {
@@ -125,7 +120,7 @@
       align-items: center;
     }
 
-    .fa-heart {}
+    
 
     .heart-1 {
       color: #fff;
@@ -136,7 +131,13 @@
       position: absolute;
       top: 35%;
       font-size: 1.5rem;
-      color: #f94430;
+       /* color: linear-gradient(0deg, #fff 25%, #FFFFFF 75%, #FDF6EC 35%); */
+      background: linear-gradient(to right, #B4FF9F 0%, #fff 100%);
+      /* Mask the color to the text, and remove the rest  */
+      background-clip: text;
+      -webkit-background-clip: text;
+      /* Make the text fill color value transparent so the masked background color comes through */
+      -webkit-text-fill-color: transparent;
     }
 
     .heart-3 {
@@ -145,16 +146,21 @@
     }
 
     .snowflake {
+    
       color: #fff;
-      font-size: 4em;
+      font-size: 3em;
       font-family: Arial;
       text-shadow: 0 0 1px #000;
-
+      
     }
 
     .snowflakes {
 
       opacity: 0;
+    }
+    .op {
+
+      opacity: 1;
     }
 
     @-webkit-keyframes snowflakes-fall {
@@ -288,6 +294,26 @@
       -webkit-animation-delay: 3s, 1.5s;
       animation-delay: 3s, 1.5s
     }
+    .snowflake:nth-of-type(10) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
+    .snowflake:nth-of-type(11) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
+    .snowflake:nth-of-type(12) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
+    .snowflake:nth-of-type(13) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
 
 
 
@@ -297,13 +323,14 @@
       align-items: center;
       position: relative;
       top: 30vh;
-
+     z-index: 99999;
     }
 
     .emotBtn {
       padding: 20px;
       border: none;
       font-size: 2rem;
+ 
     }
 
     .emotBtn:hover {
@@ -322,8 +349,52 @@
       <div class="circle image">
         <img src="https://i.ibb.co/GpZjKhC/asdfghjkl.jpg" alt="asdfghjkl">
       </div>
-
-
+ <div class="snowflakes" id="emot" aria-hidden="true">
+          <div class="snowflake">
+            💚
+          </div>
+          <div class="snowflake">
+            🥰
+          </div>
+          <div class="snowflake">
+            💚
+          </div>
+          <div class="snowflake">
+            😚
+          </div>
+          <div class="snowflake">
+            🤍
+          </div>
+          <div class="snowflake">
+            😚
+          </div>
+          <div class="snowflake">
+            😚
+          </div>
+          <div class="snowflake">
+            🤍
+          </div>
+          <div class="snowflake">
+            🥰
+          </div>
+          <div class="snowflake">
+            😚
+          </div>
+          <div class="snowflake">
+            🤍
+          </div>
+          <div class="snowflake">
+            😚
+          </div>
+          <div class="snowflake">
+             🥰
+          </div>
+          <div class="snowflake">
+           🤍
+          </div>
+        
+     
+ </div>
       <div id="container">
         <span id="text1"></span>
         <span id="text2"></span>
@@ -341,43 +412,13 @@
         <div class="btn">
           <button class="emotBtn" id="emotBtn">Click Me</button>
         </div>
-        <div class="snowflakes" id="emot" aria-hidden="true">
-          <div class="snowflake">
-            😚
-          </div>
-          <div class="snowflake">
-            😚
-          </div>
-          <div class="snowflake">
-            💚
-          </div>
-          <div class="snowflake">
-            😚
-          </div>
-          <div class="snowflake">
-            ❤️
-          </div>
-          <div class="snowflake">
-            😚
-          </div>
-          <div class="snowflake">
-            😚
-          </div>
-          <div class="snowflake">
-            🤍
-          </div>
-          <div class="snowflake">
-            😚
-          </div>
-          <div class="snowflake">
-            😚
-          </div>
-        </div>
+       
+       
         <script type="text/javascript">
           var emot = document.getElementById('emot')
           var emotBtn = document.getElementById('emotBtn')
           emotBtn.addEventListener('click', function () {
-            emot.style.opacity = "1";
+            emot.classList.toggle('op')
           })
 
           const elts = {
